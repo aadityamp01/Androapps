@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StartActivityForResultDemo</string>
+    <string name="finish_result">First Activity Result Success.</string>
+
+</resources>
