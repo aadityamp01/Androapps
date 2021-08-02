@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Login Page</string>
+    <string name="hello_login">Hello Login</string>
+    <string name="Login_Page">Login_Page</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="login">LOGIN</string>
+    <string name="login_page">Login Page</string>
+    <string name="enter_your_mobile_number0">Enter Your Email</string>
+    <string name="enter_your_mobile_number">Enter Your Email</string>
+    <string name="enter_your_address">Enter Your Address</string>
+    <string name="enter_your_mob">Enter Mobile Number</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="www.google.com">By Aaditya Paithane</string>
+    <string name="verify_your_email_and_mobile_number">Verify Your Email and Mobile Number</string>
+    <string name="Google">www.google.com</string>
+    <string name="password">Enter Your Password</string>
+    <string name="register">Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="hello">Hello</string>
+    <string name="pwd">Password</string>
+    <string name="emailTitle">Email</string>
+    <string name="nameTitle">Name</string>
+</resources>
