@@ -2,4 +2,7 @@
     <string name="app_name">TODO List</string>
     <string name="description">Description</string>
     <string name="task_title">Task Title</string>
+    <string name="no_tasks_available">No Tasks Available</string>
+    <string name="tasks_list">Tasks List</string>
+    <string name="add_task">Add Task</string>
 </resources>
