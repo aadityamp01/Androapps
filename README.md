@@ -1,5 +1,5 @@
 # Android-Apps
-### Basic Android apps to learn fundamentals of android development 
+### Basic Android projects to learn fundamentals of android development 
 
 ### Languages Used in Projects
 1. Java
