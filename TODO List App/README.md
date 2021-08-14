@@ -11,3 +11,7 @@ Moderate level android application to save tasks in android memory with SQLite
 3.    MinSdkVersion 21
 4.    targetSdkVersion 30
 5.    Androidx
+6.    View Binding
+7.    Intents
+8.    Recycler View
+9.    Dialog
