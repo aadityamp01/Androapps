@@ -1,12 +1,11 @@
 package com.todolist
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.todolist.databinding.ItemTaskrowBinding
 
-class ItemAdapter(private val items: ArrayList<TDataModel>, private val context: Context): RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
+class ItemAdapter(private val items: MainActivity, private val context: ArrayList<String>): RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
 
     class ViewHolder(val binding: ItemTaskrowBinding) : RecyclerView.ViewHolder(binding.root)
 

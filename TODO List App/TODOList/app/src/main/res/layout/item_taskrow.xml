@@ -33,7 +33,7 @@
         android:layout_weight="1"
         android:textColor="@color/black"
         tools:text="Description"/>
-    
+
     <ImageView
         android:id="@+id/ivEdit"
         android:layout_width="50dp"
