@@ -1,11 +1,14 @@
 package com.todolist
 
+import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.todolist.databinding.ItemTaskrowBinding
 
-class ItemAdapter(private val items: MainActivity, private val context: ArrayList<String>): RecyclerView.Adapter<ItemAdapter.ViewHolder>(){
+class ItemAdapter(val context: Context, private val items: ArrayList<String>) :
+    RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ItemTaskrowBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -15,7 +18,21 @@ class ItemAdapter(private val items: MainActivity, private val context: ArrayLis
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val date: String = items[position]
+
+        holder.binding.tvTaskTitle.text = (position + 1).toString()
+        holder.binding.tvDes.text = date
+
+        // Updating the background color according to the odd/even positions in list.
+        if (position % 2 == 0) {
+            holder.binding.lltRow.setBackgroundColor(
+                Color.parseColor("#EBEBEB")
+            )
+        } else {
+            holder.binding.lltRow.setBackgroundColor(
+                Color.parseColor("#FFFFFF")
+            )
+        }
     }
 
     override fun getItemCount(): Int {

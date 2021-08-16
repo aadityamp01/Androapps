@@ -1,6 +1,7 @@
 package com.todolist
 
+// Creating a data model class
 class TDataModel(
-    private var Task: String,
-    private var Description: String) {
-}
+    val Id: Int,
+    val Task: String,
+    val Description: String)
