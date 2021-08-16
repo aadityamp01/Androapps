@@ -21,10 +21,8 @@ import androidx.core.content.contentValuesOf
  *     #onUpgrade will be used to upgrade the database; if the database is
  *     newer, #onDowngrade will be used to downgrade the database
  */
-class SqliteOpenHelper(context: Context) :
-    SQLiteOpenHelper( context, DATABASE_NAME,
-        null, DATABASE_VERSION
-    ) {
+class DatabaseHandler(context: Context) :
+    SQLiteOpenHelper( context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {
         // We use this companion object to create const, to create static vars
