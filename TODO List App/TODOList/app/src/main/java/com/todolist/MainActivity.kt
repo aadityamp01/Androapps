@@ -4,6 +4,8 @@ import android.app.Dialog
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         binding.btAddTasks.setOnClickListener {
             addTask()
         }
+
+        setupTaskIntoRecyclerView()
     }
 
     private fun setupTaskIntoRecyclerView(){
@@ -39,13 +43,15 @@ class MainActivity : AppCompatActivity() {
 
             val itemAdapter = ItemAdapter(this, getItemList())
             binding.rvTaskList.adapter = itemAdapter
+        }else{
+            binding.rvTaskList.visibility = View.GONE
+            binding.tvNoTaskAvailable.visibility = View.VISIBLE
         }
-
-
     }
 
+    // Function is used to get list of items added in the database
     private fun getItemList(): ArrayList<TDataModel> {
-        val databaseHandler: DatabaseHandler = DatabaseHandler(this)
+        val databaseHandler = DatabaseHandler(this)
 
         return databaseHandler.viewTask()
     }
@@ -54,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     private fun addTask() {
         val task = binding.etTasks.text.toString()
         val description = binding.etDes.text.toString()
-        val databaseHandler: DatabaseHandler = DatabaseHandler(this)
+        val databaseHandler = DatabaseHandler(this)
 
         if(task.isNotEmpty() && description.isNotEmpty()){
             val status = databaseHandler.addTasks(TDataModel(0,task,description))
@@ -64,6 +70,8 @@ class MainActivity : AppCompatActivity() {
                 // Clearing the text views automatically after tasks saved
                 binding.etTasks.text?.clear()
                 binding.etDes.text?.clear()
+
+                setupTaskIntoRecyclerView()
             }
         }
         else{
@@ -76,6 +84,36 @@ class MainActivity : AppCompatActivity() {
         updateDialog.setCancelable(false)
 
         updateDialog.setContentView(R.layout.dialog_update)
+
+        updateDialog.findViewById<EditText>(R.id.etUpdateTask).setText(TDataModel.Task)
+        updateDialog.findViewById<EditText>(R.id.etUpdateDes).setText(TDataModel.Description)
+
+        updateDialog.findViewById<TextView>(R.id.tvUpdate).setOnClickListener{
+
+            val task = updateDialog.findViewById<EditText>(R.id.etUpdateTask).text.toString()
+            val descrpt = updateDialog.findViewById<EditText>(R.id.etUpdateDes).text.toString()
+
+            val databaseHandler = DatabaseHandler(this)
+
+            if(task.isNotEmpty() && descrpt.isNotEmpty()){
+                val status = databaseHandler.updateTask(TDataModel(0,task,descrpt))
+
+                if(status > -1){
+                    Toast.makeText(applicationContext, "Task Updated Successfully", Toast.LENGTH_SHORT).show()
+
+                    setupTaskIntoRecyclerView()
+                    updateDialog.dismiss()
+                }
+            }else{
+                Toast.makeText(applicationContext, "Empty fields can't be updated", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        updateDialog.findViewById<TextView>(R.id.tvCancel).setOnClickListener{
+            updateDialog.dismiss()
+        }
+
+        updateDialog.show()
 
     }
 
