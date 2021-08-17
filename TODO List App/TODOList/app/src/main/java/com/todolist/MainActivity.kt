@@ -1,5 +1,6 @@
 package com.todolist
 
+import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Build
 import android.os.Bundle
@@ -10,13 +11,11 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.todolist.databinding.ActivityMainBinding
-import com.todolist.databinding.DialogUpdateBinding
 import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var dialogUpdateBinding: DialogUpdateBinding
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,12 +90,12 @@ class MainActivity : AppCompatActivity() {
         updateDialog.findViewById<TextView>(R.id.tvUpdate).setOnClickListener{
 
             val task = updateDialog.findViewById<EditText>(R.id.etUpdateTask).text.toString()
-            val descrpt = updateDialog.findViewById<EditText>(R.id.etUpdateDes).text.toString()
+            val description = updateDialog.findViewById<EditText>(R.id.etUpdateDes).text.toString()
 
             val databaseHandler = DatabaseHandler(this)
 
-            if(task.isNotEmpty() && descrpt.isNotEmpty()){
-                val status = databaseHandler.updateTask(TDataModel(0,task,descrpt))
+            if(task.isNotEmpty() && description.isNotEmpty()){
+                val status = databaseHandler.updateTask(TDataModel(TDataModel.Id,task,description))
 
                 if(status > -1){
                     Toast.makeText(applicationContext, "Task Updated Successfully", Toast.LENGTH_SHORT).show()
@@ -118,7 +117,35 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun deleteRecordDialog(TDataModel: TDataModel){
-        val deleteDialog = Dialog(this,R.style.Theme_AppCompat_Dialog)
-        deleteDialog.setCancelable(true)
+        val builder = AlertDialog.Builder(this)
+
+        builder.setTitle("Delete Task")
+
+        builder.setMessage("Are you sure you wants to delete ${TDataModel.Id}")
+        builder.setIcon(android.R.drawable.ic_dialog_alert)
+
+        builder.setPositiveButton("Yes"){ dialogInterface, _ ->
+            val databaseHandler = DatabaseHandler(this)
+            val status = databaseHandler.updateTask(TDataModel(TDataModel.Id,"",""))
+
+            if(status > -1){
+                Toast.makeText(applicationContext, "Task Deleted Successfully", Toast.LENGTH_SHORT).show()
+
+                setupTaskIntoRecyclerView()
+            }
+
+            dialogInterface.dismiss()
+        }
+
+        builder.setNegativeButton("No") { dialogInterface, _->
+            dialogInterface.dismiss()
+        }
+
+        val alertDialog: AlertDialog = builder.create()
+
+        // Set other dialog properties
+
+        alertDialog.setCancelable(false)  // Will not allow user to cancel the dialog
+        alertDialog.show()
     }
 }
