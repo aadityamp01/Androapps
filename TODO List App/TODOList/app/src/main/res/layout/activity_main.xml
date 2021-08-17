@@ -11,7 +11,7 @@
         android:id="@+id/toolbar_todo_activity"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/white"
+        android:background="@color/greenish"
         android:theme="@style/ToolbarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,6 +126,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
+        style="@style/Theme.AppCompat.DayNight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btAddTasks">
@@ -142,7 +143,7 @@
             android:id="@+id/rvTaskList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"/>
 
         <TextView
             android:id="@+id/tvNoTaskAvailable"

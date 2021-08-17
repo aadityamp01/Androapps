@@ -1,9 +1,9 @@
 package com.todolist
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.todolist.databinding.ItemTaskrowBinding
 
@@ -26,11 +26,11 @@ class ItemAdapter(private val context: Context, private val items: ArrayList<TDa
         // Updating the background color according to the odd/even positions in list.
         if (position % 2 == 0) {
             holder.binding.lltRow.setBackgroundColor(
-                Color.parseColor("#EBEBEB")
+                ContextCompat.getColor(context,R.color.greenish)
             )
         } else {
             holder.binding.lltRow.setBackgroundColor(
-                Color.parseColor("#FFFFFF")
+                ContextCompat.getColor(context,R.color.white)
             )
         }
 

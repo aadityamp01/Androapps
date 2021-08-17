@@ -6,7 +6,6 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
-import androidx.core.content.contentValuesOf
 
 /**
  * Create a helper object to create, open, and/or manage a database.
@@ -44,7 +43,7 @@ class DatabaseHandler(context: Context) :
                 TABLE_TODO + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," +
                 KEY_TASK + " TEXT," +
-                KEY_DESCRIPTION + "TEXT," + ")") // Create TODOList Table Query.
+                KEY_DESCRIPTION + " TEXT" + ")") // Create TODOList Table Query.
         db?.execSQL(createTodoListTable) // Executing the create table query.
     }
 
@@ -77,13 +76,13 @@ class DatabaseHandler(context: Context) :
      * Function returns the list of history table data.
      */
     fun viewTask(): ArrayList<TDataModel> {
-        val list: ArrayList<TDataModel> = ArrayList<TDataModel>() // ArrayList is initialized
+        val list: ArrayList<TDataModel> = ArrayList() // ArrayList is initialized
 
         val selectQuery = "SELECT * FROM $TABLE_TODO"
 
         val db = this.readableDatabase
 
-        var cursor: Cursor? = null
+        val cursor: Cursor?
 
         // Move the cursor to the next row.
         try {
@@ -103,7 +102,7 @@ class DatabaseHandler(context: Context) :
                 task = cursor.getString(cursor.getColumnIndex(KEY_TASK))
                 description = cursor.getString(cursor.getColumnIndex(KEY_DESCRIPTION))
 
-                val tsk = TDataModel(Id = id, Task = task, Description = description)
+                val tsk = TDataModel(id = id, Task = task, Description = description)
                 list.add(tsk)
             }while (cursor.moveToNext())
         }
@@ -120,7 +119,7 @@ class DatabaseHandler(context: Context) :
         values.put(KEY_DESCRIPTION, tsk.Description)
 
         //Updating Row
-        val success = db.update(TABLE_TODO, values, KEY_ID + "=" + tsk.Id, null)
+        val success = db.update(TABLE_TODO, values, KEY_ID + "=" + tsk.id, null)
 
         db.close() // Database is closed after insertion.
         return success
@@ -130,10 +129,10 @@ class DatabaseHandler(context: Context) :
         val db = this.writableDatabase
 
         val values = ContentValues() // Creates an empty set of values using the default initial size
-        values.put(KEY_ID, tsk.Id) // Putting the value to the column along with the value.
+        values.put(KEY_ID, tsk.id) // Putting the value to the column along with the value.
 
         //Updating Row
-        val success = db.delete(TABLE_TODO, KEY_ID + "=" + tsk.Id, null)
+        val success = db.delete(TABLE_TODO, KEY_ID + "=" + tsk.id, null)
 
         db.close() // Database is closed after insertion.
         return success

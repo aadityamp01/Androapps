@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.todolist.databinding.ActivityMainBinding
 import kotlin.collections.ArrayList
 
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
 
             binding.rvTaskList.visibility = View.VISIBLE
             binding.tvNoTaskAvailable.visibility = View.GONE
+
+            // Set the LayoutManager that this RecyclerView will use.
+            binding.rvTaskList.layoutManager = LinearLayoutManager(this)
 
             val itemAdapter = ItemAdapter(this, getItemList())
             binding.rvTaskList.adapter = itemAdapter
@@ -95,7 +99,7 @@ class MainActivity : AppCompatActivity() {
             val databaseHandler = DatabaseHandler(this)
 
             if(task.isNotEmpty() && description.isNotEmpty()){
-                val status = databaseHandler.updateTask(TDataModel(TDataModel.Id,task,description))
+                val status = databaseHandler.updateTask(TDataModel(TDataModel.id,task,description))
 
                 if(status > -1){
                     Toast.makeText(applicationContext, "Task Updated Successfully", Toast.LENGTH_SHORT).show()
@@ -121,12 +125,12 @@ class MainActivity : AppCompatActivity() {
 
         builder.setTitle("Delete Task")
 
-        builder.setMessage("Are you sure you wants to delete ${TDataModel.Id}")
+        builder.setMessage("Are you sure you wants to delete ${TDataModel.id}")
         builder.setIcon(android.R.drawable.ic_dialog_alert)
 
         builder.setPositiveButton("Yes"){ dialogInterface, _ ->
             val databaseHandler = DatabaseHandler(this)
-            val status = databaseHandler.updateTask(TDataModel(TDataModel.Id,"",""))
+            val status = databaseHandler.deleteTask(TDataModel(TDataModel.id,"",""))
 
             if(status > -1){
                 Toast.makeText(applicationContext, "Task Deleted Successfully", Toast.LENGTH_SHORT).show()

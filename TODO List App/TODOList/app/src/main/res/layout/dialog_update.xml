@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
+    style="@style/Theme.AppCompat.DayNight"
     android:padding="10dp">
 
     <TextView
@@ -26,7 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
             android:text="@string/task"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/etUpdateTask"
@@ -34,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
             android:inputType="text"
+            android:textColor="@color/black"
             android:hint="@string/edit_new_task"
             android:autofillHints="text" />
     </LinearLayout>
@@ -49,7 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
             android:text="@string/description"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/etUpdateDes"
@@ -58,7 +63,8 @@
             android:layout_weight="0.25"
             android:inputType="text"
             android:hint="@string/new_description"
-            android:autofillHints="text" />
+            android:autofillHints="text"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout

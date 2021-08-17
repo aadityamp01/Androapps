@@ -6,6 +6,7 @@
     android:id="@+id/lltRow"
     android:orientation="horizontal"
     android:gravity="center_vertical"
+    style="@style/Theme.AppCompat.DayNight"
     android:padding="10dp">
 
     <TextView
@@ -40,6 +41,7 @@
         android:layout_height="50dp"
         android:contentDescription="@string/image"
         android:scaleType="center"
+        android:background="@drawable/edit"
         android:foreground="?attr/selectableItemBackground"/>
 
     <ImageView
@@ -48,6 +50,7 @@
         android:layout_height="50dp"
         android:contentDescription="@string/image"
         android:scaleType="center"
+        android:background="@drawable/delete2"
         android:foreground="?attr/selectableItemBackground" />
 
 
