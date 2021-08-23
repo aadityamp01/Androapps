@@ -13,14 +13,18 @@
 4. Androidx
 5. Gradle Build (According to the project)
 
-### Reference
- - https://developer.android.com/docs
+### Official References
+1. https://developer.android.com/docs
+2. https://developer.android.com/courses/pathways/kotlin-for-java [Java to Kotlin Pathway]
+3. https://developer.android.com/kotlin/campaign/learn [Learn Kotlin]
+4. https://github.com/Kotlin/kotlinx.coroutines/blob/master/ui/coroutines-guide-ui.md?s=09 [Kotlin Coroutines]
+
 
 ### Android Dev Learnings/ Best Resources
 0. https://youtu.be/VaMWsm6CFss ( Android ROADMAP - Love Bubber Bhaiya)
 1. https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb (Basics of Android - Anuj Bhaiya)
-1.1. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
-2. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
+2. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
+3. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
 
 
 ### Setting up the project
