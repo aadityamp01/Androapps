@@ -21,10 +21,13 @@
 
 
 ### Android Dev Learnings/ Best Resources
+0. https://github.com/MindorksOpenSource/android-developer-roadmap ( Android ROADMAP - MindorksOpenSource )
 0. https://youtu.be/VaMWsm6CFss ( Android ROADMAP - Love Bubber Bhaiya)
 1. https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb (Basics of Android - Anuj Bhaiya)
 2. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
 3. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
+4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
+
 
 
 ### Setting up the project
@@ -42,4 +45,8 @@ git clone https://github.com/your_username/Android-Apps.git
 ```
 
 ### Contact and Support
+
 > **_If you face any issue related to any project or want to suggest any application, Please feel free to contact me:   @ [ampicopn@gmail.com]_**
+
+#### If you find this Repository helpful, give it a star ⭐ and fork 🍽️ this repository to help others!!
+
