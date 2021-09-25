@@ -27,6 +27,7 @@
 2. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
 3. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
 4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
+5. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
 
 
 
