@@ -1,5 +1,11 @@
-# Android-Apps
-### Basic Android projects to learn fundamentals of android development 
+[![Hacktoberfest 2021](./assets/logo.png)](https://vinitshahdeo.dev/hacktoberfest-2021)
+
+# Androapps
+
+### An open source Important Android projects to learn fundamentals of android development. 
+#### This is a Beginner Friendly Repository made for Open Source Enthusiasts who can contribute to the App during HacktoberFest 2021. 
+#### To contribute in this project you need to build your own android apps or you can update the existing applications. 
+
 
 ### Languages Used in Projects
 1. Java
@@ -13,7 +19,7 @@
 4. Androidx
 5. Gradle Build (According to the project)
 
-### Official References
+### Official References to learn Android development
 1. https://developer.android.com/docs
 2. https://developer.android.com/courses/pathways/kotlin-for-java [Java to Kotlin Pathway]
 3. https://developer.android.com/kotlin/campaign/learn [Learn Kotlin]
