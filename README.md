@@ -2,7 +2,7 @@
 
 # Androapps
 
-### An open source Important Android projects to learn fundamentals of android development. 
+### Important Android projects to learn fundamentals of android development. 
 #### This is a Beginner Friendly Repository made for Open Source Enthusiasts who can contribute to the App during HacktoberFest 2021. 
 #### To contribute in this project you need to build your own android apps or you can update the existing applications. 
 
@@ -36,7 +36,6 @@
 5. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
 
 
-
 ### Setting up the project
 
 To setup the project locally please follow the instructions:
@@ -57,3 +56,5 @@ git clone https://github.com/your_username/Android-Apps.git
 
 #### If you find this Repository helpful, give it a star ⭐ and fork 🍽️ this repository to help others!!
 
+
+##### Made with ❤️ By Aaditya Paithane
