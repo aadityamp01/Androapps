@@ -1,11 +1,9 @@
 # Word Shuffle Game
 
 ## Overview
--------------
 
 
-##Libraries Used
---------------
+## Libraries Used
 
 * [Kotlin][1] - Kotlin is a Modern, concise and safe programming language. 
 * [View Binding][2] - View binding is a feature that allows you to more easily write code that interacts with views.
