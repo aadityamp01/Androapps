@@ -1,0 +1,3 @@
+[submodule "World Time App/world_time"]
+	path = World Time App/world_time
+	url = https://github.com/Megabyte-143/world_time.git
