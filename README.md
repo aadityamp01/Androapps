@@ -92,6 +92,9 @@ git remote add upstream https://github.com/aadityamp01/Androapps.git
 
 #### 10. You're done, wait for the review from maintainers.
 
+### Project Maintainer :
+
+<a href="https://github.com/aadityamp01"><img src="https://avatars.githubusercontent.com/u/51539518?v=4" width="100px" height="100px"></a>
 
 ### Contact and Support
 
