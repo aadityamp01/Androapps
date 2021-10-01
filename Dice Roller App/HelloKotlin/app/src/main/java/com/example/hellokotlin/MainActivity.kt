@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         //diceImage2.setImageResource(getRandomDiceImage())
 
-        Toast.makeText(this, "Dice Rolled! ✔", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.dice_rolled), Toast.LENGTH_SHORT).show()
 
         //diceImage.setImageResource(drawableDice)
 
