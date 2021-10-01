@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             val status = databaseHandler.addTasks(TDataModel(0,task,description))
 
             if(status > -1){
-                Toast.makeText(applicationContext, "Task Added Successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, getString(R.string.added_successfully), Toast.LENGTH_SHORT).show()
                 // Clearing the text views automatically after tasks saved
                 binding.etTasks.text?.clear()
                 binding.etDes.text?.clear()
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         else{
-            Toast.makeText(applicationContext, "Add Task", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, getString(R.string.add_task), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -102,13 +102,13 @@ class MainActivity : AppCompatActivity() {
                 val status = databaseHandler.updateTask(TDataModel(TDataModel.id,task,description))
 
                 if(status > -1){
-                    Toast.makeText(applicationContext, "Task Updated Successfully", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, getString(R.string.updated_successfully), Toast.LENGTH_SHORT).show()
 
                     setupTaskIntoRecyclerView()
                     updateDialog.dismiss()
                 }
             }else{
-                Toast.makeText(applicationContext, "Empty fields can't be updated", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, getString(R.string.empty_field_err_msg), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -123,9 +123,9 @@ class MainActivity : AppCompatActivity() {
     fun deleteRecordDialog(TDataModel: TDataModel){
         val builder = AlertDialog.Builder(this)
 
-        builder.setTitle("Delete Task")
+        builder.setTitle(getString(R.string.delete_task))
 
-        builder.setMessage("Are you sure you wants to delete ${TDataModel.id}")
+        builder.setMessage(getString(R.string.delete_specific, TDataModel.id))
         builder.setIcon(android.R.drawable.ic_dialog_alert)
 
         builder.setPositiveButton("Yes"){ dialogInterface, _ ->
@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             val status = databaseHandler.deleteTask(TDataModel(TDataModel.id,"",""))
 
             if(status > -1){
-                Toast.makeText(applicationContext, "Task Deleted Successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, getString(R.string.deleted_successfully), Toast.LENGTH_SHORT).show()
 
                 setupTaskIntoRecyclerView()
             }

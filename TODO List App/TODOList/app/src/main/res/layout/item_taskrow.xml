@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:textColor="@color/black"
-        tools:text="Task"/>
+        tools:text="@string/task"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         android:layout_marginStart="5dp"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:text=":"/>
+        tools:text="@string/colon"/>
 
     <TextView
         android:id="@+id/tvDes"
@@ -33,7 +33,7 @@
         android:textSize="16sp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        tools:text="Description"/>
+        tools:text="@string/description"/>
 
     <ImageView
         android:id="@+id/ivEdit"
