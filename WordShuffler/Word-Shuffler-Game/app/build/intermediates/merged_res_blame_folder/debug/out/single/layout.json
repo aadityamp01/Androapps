@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_welcome.xml",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_hint.xml",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_hint.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_game.xml",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_game.xml"
+    }
+]

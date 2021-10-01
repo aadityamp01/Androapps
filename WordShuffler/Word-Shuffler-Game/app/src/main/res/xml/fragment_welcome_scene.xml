@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1500"
+        motion:autoTransition="animateToEnd"
+        motion:motionInterpolator="cubic(0.62,0.02,0.63,0.9)">
+       <KeyFrameSet>
+           <KeyPosition />
+           <KeyAttribute />
+           <KeyAttribute
+               motion:motionTarget="@id/materialButton"
+               motion:framePosition="50"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/editPersonNameLayout"
+               motion:framePosition="50"
+               android:alpha="0" />
+           <KeyPosition />
+           <KeyAttribute
+               motion:motionTarget="@+id/editPersonPasswordLayout"
+               motion:framePosition="50"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/description"
+               motion:framePosition="69"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/description"
+               motion:framePosition="69"
+               android:alpha="0.5" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:alpha="1"
+            android:rotationY="-180"
+            motion:layout_editor_absoluteY="113dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/editPersonNameLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/materialButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/editPersonNameLayout"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0"
+            motion:transitionEasing="cubic(0.82,0,0.36,1)" />
+        <Constraint
+            android:id="@+id/editPersonPasswordLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            motion:layout_constraintTop_toBottomOf="@id/editPersonNameLayout"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/description"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/editPersonNameLayout"
+            android:layout_marginBottom="10dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            motion:transitionEasing="standard"
+            motion:pathMotionArc="none"
+            android:alpha="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toTopOf="@id/editPersonNameLayout"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:rotationY="0"
+            android:scaleX="1"
+            android:scaleY="1" />
+        <Constraint
+            android:id="@+id/editPersonNameLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="1"
+            motion:transitionEasing="cubic(0.92,0,0.41,0.89)"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/materialButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/editPersonPasswordLayout"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:alpha="1"
+            motion:transitionEasing="cubic(0.87,0,0.45,0.94)" />
+        <Constraint
+            android:id="@+id/editPersonPasswordLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            motion:layout_constraintTop_toBottomOf="@id/editPersonNameLayout"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/description"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@id/editPersonNameLayout"
+            android:layout_marginBottom="10dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            android:alpha="1" />
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/nav_graph.xml","javaFiles":["com.example.wordshuffle.WelcomeFragmentDirections","com.example.wordshuffle.GameFragmentDirections","com.example.wordshuffle.GameFragmentArgs","com.example.wordshuffle.HintFragmentDirections"]}]

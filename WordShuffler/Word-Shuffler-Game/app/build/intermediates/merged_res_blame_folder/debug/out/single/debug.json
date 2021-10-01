@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/font_ubuntu_bold.ttf.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/font/ubuntu_bold.ttf"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/layout_fragment_hint.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_hint.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/font_ubuntu_regular.ttf.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/font/ubuntu_regular.ttf"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_arrow_forward_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_arrow_forward_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_bulb.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_bulb.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/font_ubuntu_medium.ttf.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/font/ubuntu_medium.ttf"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_refresh_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_refresh_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_person_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_person_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_lock_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_lock_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/xml_fragment_welcome_scene.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/xml/fragment_welcome_scene.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_add_circle_outline_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_add_circle_outline_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/navigation_nav_graph.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/layout_fragment_welcome.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_welcome.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/anim_fade_in_anime.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/anim/fade_in_anime.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_layout_bg.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/layout_bg.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/anim_rotate_fortyfive_anim.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/anim/rotate_fortyfive_anim.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_bedtime_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_bedtime_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/anim_fade_out_anim.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/anim/fade_out_anim.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_check_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_check_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_game_1_1s_47px.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_game_1_1s_47px.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/font_ubuntu_light.ttf.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/font/ubuntu_light.ttf"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_close_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_close_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/layout_fragment_game.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/layout/fragment_game.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_wb_sunny_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_wb_sunny_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_remove_red_eye_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_remove_red_eye_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_search_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_search_24.xml"
+    },
+    {
+        "merged": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/build/intermediates/res/merged/debug/drawable_ic_round_warning_24.xml.flat",
+        "source": "/home/shivam/AndroidStudioProjects/Word Shuffler Game/app/src/main/res/drawable/ic_round_warning_24.xml"
+    }
+]
