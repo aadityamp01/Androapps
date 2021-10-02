@@ -10,6 +10,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import es.dmoral.toasty.Toasty;
+
 public class MainActivity extends AppCompatActivity {
     EditText email,password,name;
     CheckBox verify;
@@ -34,19 +36,21 @@ public class MainActivity extends AppCompatActivity {
         //EMAIL_VALUE = emailEntered;
 
         if(TextUtils.isEmpty(nameEntered) || TextUtils.isEmpty(emailEntered) || TextUtils.isEmpty(passwordEntered)){
-            Toast.makeText(this,getString(R.string.complete_all_fields),Toast.LENGTH_SHORT).show();
+            Toasty.error(this,getString(R.string.complete_all_fields),Toast.LENGTH_SHORT).show();
+            
         }else{
             if(verify.isChecked()) {
                 Intent intent = new Intent(this, WelcomeActivity.class);
                 intent.putExtra("email", emailEntered);
 
-                Toast.makeText(this, getString(R.string.entered_details, emailEntered, passwordEntered), Toast.LENGTH_SHORT).show();
+
+                Toasty.success(this,getString(R.string.entered_details, emailEntered, passwordEntered), Toast.LENGTH_SHORT).show();
 
                 //intent.putExtra("age", 80);
                 startActivity(intent);
             }
             else{
-                Toast.makeText(this,getString(R.string.verify_checkbox), Toast.LENGTH_SHORT).show();
+                Toasty.warning(this,getString(R.string.verify_checkbox), Toast.LENGTH_SHORT).show();
             }
         }
     }
