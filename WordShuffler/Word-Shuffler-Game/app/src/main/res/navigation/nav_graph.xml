@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.wordshuffle.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.wordshuffle.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="RandomUser" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue="int_password" />
+        <action
+            android:id="@+id/action_gameFragment_to_hintFragment"
+            app:destination="@id/hintFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/hintFragment"
+        android:name="com.example.wordshuffle.HintFragment"
+        android:label="fragment_hint"
+        tools:layout="@layout/fragment_hint" >
+        <action
+            android:id="@+id/action_hintFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </dialog>
+</navigation>

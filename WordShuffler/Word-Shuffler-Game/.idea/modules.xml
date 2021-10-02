@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UnscTrail.iml" filepath="$PROJECT_DIR$/.idea/modules/UnscTrail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UnscTrail.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UnscTrail.app.iml" />
+    </modules>
+  </component>
+</project>
