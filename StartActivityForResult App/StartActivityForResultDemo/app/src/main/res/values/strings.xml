@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StartActivityForResultDemo</string>
+    <string name="finish_result">First Activity Result Success.</string>
+    <string name="finish">FINISH</string>
+    <string name="launch_first_activity">Launch First Activity</string>
+    <string name="launch_second_activity">Launch Second Activity</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="submit">SUBMIT</string>
+    <string name="second_actviity_result">%1$s ===> %2$s</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="resultCancelled">Result Cancelled</string>
+</resources>

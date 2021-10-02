@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lltRow"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    style="@style/Theme.AppCompat.DayNight"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:text="@string/task"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="@string/colon"/>
+
+    <TextView
+        android:id="@+id/tvDes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        tools:text="@string/description"/>
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/image"
+        android:scaleType="center"
+        android:background="@drawable/edit"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/image"
+        android:scaleType="center"
+        android:background="@drawable/delete2"
+        android:foreground="?attr/selectableItemBackground" />
+
+
+
+</LinearLayout>

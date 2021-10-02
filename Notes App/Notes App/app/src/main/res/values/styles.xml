@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.NotesApp.ActionBar.SplashScreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.NotesApp.ButtonBar.SplashScreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>
