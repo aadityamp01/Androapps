@@ -4,10 +4,10 @@
 
 <div align="center">
   <p float="left">
-    <img src="word_shuffler_welcome_screen.png" width="20%" >
-    <img src="win_screen.png" width=20%>
-    <img src="word_shuffler_hint.png" width=20%>
-    <img src="word_shuffler_hint_given.png" width=20%>
+    <img src="word_shuffler_welcome_screen.png" width="22%" >
+    <img src="win_screen.png" width=22%>
+    <img src="word_shuffler_hint.png" width=22%>
+    <img src="word_shuffler_hint_given.png" width=22%>
  </p>
 </div>
 
@@ -40,4 +40,3 @@
 [12]: https://developer.android.com/guide/topics/ui/declaring-layout
 
 ## Upcoming Features
---------------------
