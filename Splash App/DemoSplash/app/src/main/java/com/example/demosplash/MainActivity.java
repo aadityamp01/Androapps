@@ -16,10 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // To hide your AppBar
-        Objects.requireNonNull(getSupportActionBar()).hide();
-
-
         new Handler(Looper.getMainLooper()).postDelayed(this::moveToWelcome,5000);
 
     }

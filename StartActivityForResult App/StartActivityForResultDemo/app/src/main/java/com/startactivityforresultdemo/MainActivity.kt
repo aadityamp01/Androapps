@@ -60,12 +60,13 @@ class MainActivity : AppCompatActivity() {
                     val name = data.getStringExtra(NAME)
                     val email = data.getStringExtra(EMAIL)
 
-                    tv_second_activity_result.text = ("$name  ==>  $email")
+                    tv_second_activity_result.text = getString(R.string.second_actviity_result, name, email)
                 }
             }
         } else if (resultCode == Activity.RESULT_CANCELED) {
-            Log.e("Cancelled", "Cancelled")
-            Toast.makeText(this@MainActivity,"Result Cancelled",Toast.LENGTH_SHORT).show()
+            val cancelledText = getString(R.string.cancelled)
+            Log.e(cancelledText, cancelledText)
+            Toast.makeText(this@MainActivity, getString(R.string.resultCancelled), Toast.LENGTH_SHORT).show()
         }
     }
     // END

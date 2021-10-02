@@ -22,7 +22,7 @@
             android:layout_weight="1"
             android:background="#1D1D1D"
             android:gravity="end|bottom"
-            android:text="1 + 1"
+            android:text="@string/one_plus_one"
             android:textColor="@color/colorWhite"
             android:textSize="40sp" />
 
@@ -33,7 +33,7 @@
             android:layout_weight="1"
             android:background="#1D1D1D"
             android:gravity="end|center"
-            android:text="2"
+            android:text="@string/two"
             android:textColor="@color/colorWhite"
             android:textSize="40sp" />
 
@@ -59,7 +59,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="+/-"
+                android:text="@string/add_subtract"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -69,7 +69,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="()"
+                android:text="@string/parenthesis"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -79,7 +79,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="%"
+                android:text="@string/modulus"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -89,7 +89,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_operations"
-                android:text="/"
+                android:text="@string/divide"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -105,7 +105,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="7"
+                android:text="@string/seven"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -115,7 +115,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="8"
+                android:text="@string/eight"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="9"
+                android:text="@string/nine"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -135,7 +135,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_operations"
-                android:text="x"
+                android:text="@string/multiply"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"/>
         </LinearLayout>
@@ -151,7 +151,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="4"
+                android:text="@string/four"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -161,7 +161,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="5"
+                android:text="@string/five"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -171,7 +171,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="6"
+                android:text="@string/six"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -181,7 +181,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_operations"
-                android:text="-"
+                android:text="@string/subtract"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -197,7 +197,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="1"
+                android:text="@string/one"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -207,7 +207,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="2"
+                android:text="@string/two"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -217,7 +217,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="3"
+                android:text="@string/three"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -227,7 +227,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_operations"
-                android:text="+"
+                android:text="@string/add"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -243,7 +243,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="C"
+                android:text="@string/clear"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -253,7 +253,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="0"
+                android:text="@string/zero"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -263,7 +263,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/ripple_effect_numbers"
-                android:text="."
+                android:text="@string/point"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
 
@@ -273,7 +273,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/red_button"
-                android:text="="
+                android:text="@string/equals"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
         </LinearLayout>

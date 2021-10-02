@@ -12,4 +12,11 @@
     <string name="update">UPDATE</string>
     <string name="cancel">CANCEL</string>
     <string name="new_description">New Description</string>
+    <string name="added_successfully">Task Added Successfully</string>
+    <string name="updated_successfully">Task Updated Successfully</string>
+    <string name="deleted_successfully">Task Deleted Successfully</string>
+    <string name="empty_field_err_msg">Empty fields can\'t be updated</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="delete_specific">Are you sure you wants to delete %1$d</string>
+    <string name="colon">:</string>
 </resources>

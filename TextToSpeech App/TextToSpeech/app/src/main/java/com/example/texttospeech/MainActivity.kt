@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
 
         binding.btSpeak.setOnClickListener {
             if(binding.etTts.text.isEmpty()){
-                Toast.makeText(this, "Enter text to speak", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.enter_text_to_speak), Toast.LENGTH_SHORT).show()
             }else{
                 speakOut(binding.etTts.text.toString())
             }
@@ -38,11 +38,13 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
             val result = ttospeech!!.setLanguage(Locale.US)
 
             if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
-                Log.e("TTS","The language is not supported" )
+                Log.e("TTS",getString(R.string.language_not_support) )
+                Toast.makeText(this, getString(R.string.language_not_support), Toast.LENGTH_SHORT).show()
             }
         }
         else{
-            Log.e("TTA", "Initialization failed!")
+            Log.e("TTA", getString(R.string.initialization_failed))
+            Toast.makeText(this, getString(R.string.initialization_failed), Toast.LENGTH_SHORT).show()
         }
     }
 

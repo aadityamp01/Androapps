@@ -21,4 +21,8 @@
     <string name="pwd">Password</string>
     <string name="emailTitle">Email</string>
     <string name="nameTitle">Name</string>
+    <string name="personalized_welcome">Welcome\n%1$s</string>
+    <string name="complete_all_fields">Complete all fields</string>
+    <string name="entered_details">Email Entered: %1$s\nPassword Entered: %2$s</string>
+    <string name="verify_checkbox">Verify checkbox</string>
 </resources>
