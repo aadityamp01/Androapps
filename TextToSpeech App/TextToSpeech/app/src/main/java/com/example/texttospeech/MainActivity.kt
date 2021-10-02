@@ -6,6 +6,7 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Toast
 import com.example.texttospeech.databinding.ActivityMainBinding
+import es.dmoral.toasty.Toasty
 import java.util.*
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
 
         binding.btSpeak.setOnClickListener {
             if(binding.etTts.text.isEmpty()){
-                Toast.makeText(this, getString(R.string.enter_text_to_speak), Toast.LENGTH_SHORT).show()
+                Toasty.warning(this, getString(R.string.enter_text_to_speak), Toast.LENGTH_SHORT).show()
             }else{
                 speakOut(binding.etTts.text.toString())
             }
@@ -39,12 +40,12 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener{
 
             if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
                 Log.e("TTS",getString(R.string.language_not_support) )
-                Toast.makeText(this, getString(R.string.language_not_support), Toast.LENGTH_SHORT).show()
+                Toasty.warning(this, getString(R.string.language_not_support), Toast.LENGTH_SHORT).show()
             }
         }
         else{
             Log.e("TTA", getString(R.string.initialization_failed))
-            Toast.makeText(this, getString(R.string.initialization_failed), Toast.LENGTH_SHORT).show()
+            Toasty.error(this, getString(R.string.initialization_failed), Toast.LENGTH_SHORT).show()
         }
     }
 
