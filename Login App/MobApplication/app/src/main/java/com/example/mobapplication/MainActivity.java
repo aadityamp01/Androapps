@@ -13,12 +13,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText email,password,name;
     CheckBox verify;
-    //public static String EMAIL_VALUE = "";
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main); Can use to get hello world activity
+        
         setContentView(R.layout.acitvity_mn);
 
         name = findViewById(R.id.name);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(this, getString(R.string.entered_details, emailEntered, passwordEntered), Toast.LENGTH_SHORT).show();
 
-                //intent.putExtra("age", 80);
+                
                 startActivity(intent);
             }
             else{
