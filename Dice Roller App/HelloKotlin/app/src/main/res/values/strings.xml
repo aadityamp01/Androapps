@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Dice Roller</string>
-    <string name="roll">ROLL</string>
-    <string name="count_up">Count Up</string>
-    <string name="dice">Dice</string>
-    <string name="hint_roll_dice">Click on Roll button to roll the dice</string>
-    <string name="dice_rolled">Dice Rolled! ✔</string>
-</resources>
