@@ -25,4 +25,7 @@
     <string name="complete_all_fields">Complete all fields</string>
     <string name="entered_details">Email Entered: %1$s\nPassword Entered: %2$s</string>
     <string name="verify_checkbox">Verify checkbox</string>
+
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
