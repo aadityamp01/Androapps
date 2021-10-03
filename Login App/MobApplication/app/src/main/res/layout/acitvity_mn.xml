@@ -65,6 +65,14 @@
         android:inputType="textPassword"/>
 
     <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me"
+        android:textColor="@color/colorAccent"/>
+
+
+    <CheckBox
         android:id="@+id/verify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
