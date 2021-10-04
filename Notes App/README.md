@@ -17,6 +17,6 @@ You can run this Android app on Appetize.io [here](https://appetize.io/app/22qc9
 
 ### To know more about Appetize.io follow the given links :
 
-[Appetize.io User Guide Docs](https://docs.appetize.io/)
+[Appetize.io User Guide Docs](https://docs.appetize.io/)<br />
 [Appetize.io User Guide Video](https://www.youtube.com/watch?v=9h6w8PU3cv4)
 
