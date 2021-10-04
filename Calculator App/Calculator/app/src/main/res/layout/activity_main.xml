@@ -22,18 +22,18 @@
             android:layout_weight="1"
             android:background="#1D1D1D"
             android:gravity="end|bottom"
-            android:text="@string/one_plus_one"
+            android:text="@string/zero"
             android:textColor="@color/colorWhite"
             android:textSize="40sp" />
 
         <TextView
             android:id="@+id/output"
             android:layout_width="match_parent"
-            android:layout_height="263dp"
+            android:layout_height="292dp"
             android:layout_weight="1"
             android:background="#1D1D1D"
             android:gravity="end|center"
-            android:text="@string/two"
+            android:text="@string/zero"
             android:textColor="@color/colorWhite"
             android:textSize="40sp" />
 
@@ -61,7 +61,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/add_subtract"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/brackets"
@@ -71,7 +72,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/parenthesis"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="operatorEvent"/>
 
             <Button
                 android:id="@+id/percentage"
@@ -81,7 +83,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/modulus"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="percentEvent"/>
 
             <Button
                 android:id="@+id/division"
@@ -91,7 +94,8 @@
                 android:background="@drawable/ripple_effect_operations"
                 android:text="@string/divide"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="operatorEvent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,7 +111,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/seven"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number8"
@@ -117,7 +122,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/eight"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number9"
@@ -127,7 +133,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/nine"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/multiply"
@@ -137,7 +144,8 @@
                 android:background="@drawable/ripple_effect_operations"
                 android:text="@string/multiply"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp"/>
+                android:textSize="30sp"
+                android:onClick="operatorEvent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -153,7 +161,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/four"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number5"
@@ -163,7 +172,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/five"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number6"
@@ -173,7 +183,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/six"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/substraction"
@@ -183,7 +194,9 @@
                 android:background="@drawable/ripple_effect_operations"
                 android:text="@string/subtract"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="operatorEvent"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -199,7 +212,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/one"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number2"
@@ -209,7 +223,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/two"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/number3"
@@ -219,7 +234,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/three"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/add"
@@ -229,7 +245,9 @@
                 android:background="@drawable/ripple_effect_operations"
                 android:text="@string/add"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="operatorEvent"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -245,7 +263,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/clear"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="clearEvent"/>
 
             <Button
                 android:id="@+id/number0"
@@ -255,7 +274,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/zero"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/dot"
@@ -265,7 +285,8 @@
                 android:background="@drawable/ripple_effect_numbers"
                 android:text="@string/point"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="numberEvent"/>
 
             <Button
                 android:id="@+id/equal"
@@ -275,7 +296,8 @@
                 android:background="@drawable/red_button"
                 android:text="@string/equals"
                 android:textColor="@color/colorWhite"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:onClick="equalEvent"/>
         </LinearLayout>
 
     </LinearLayout>

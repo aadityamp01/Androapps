@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="one_plus_one">1 + 1</string>
     <string name="two">2</string>
     <string name="add_subtract">+/-</string>
     <string name="parenthesis">()</string>
@@ -21,4 +20,5 @@
     <string name="zero">0</string>
     <string name="point">.</string>
     <string name="equals">=</string>
+
 </resources>
