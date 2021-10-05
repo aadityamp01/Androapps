@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_user">Hello User</string>
+    <string name="register_new_key">Register new key</string>
+    <string name="todo">TODO</string>
+    <string name="username">username</string>
+    <string name="add_your_key">Add Your Key</string>
+    <string name="account_name">Application</string>
+    <string name="username_email">Username/Email</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="update_key">Update Your Key</string>
+    <string name="password">Password</string>
+    <string name="done">done</string>
+    <string name="definition">ConstraintLayout allows you to create large and complex layouts with a flat view hierarchy (no nested view groups). It\'s similar to RelativeLayout in that all views are laid out according to relationships between sibling views and the parent layout, but it\'s more flexible than RelativeLayout and easier to use with Android Studio\'s Layout Editor.</string>
+    <string name="delete_this_key">Delete Key</string>
+</resources>

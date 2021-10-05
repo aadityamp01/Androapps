@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="custom_edit_text_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="boxBackgroundColor">?attr/cardBackgroundColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">?attr/colorSecondaryVariant</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="fontFamily">@font/sf_pro_text_regular</item>
+        <item name="hintEnabled">false</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextAppearance">@font/sf_pro_text_regular</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+    </style>
+</resources>
