@@ -43,3 +43,10 @@ kapt "androidx.room:room-compiler:2.3.0"
 // optional - Kotlin Extensions and Coroutines support for Room
 implementation "androidx.room:room-ktx:2.3.0"}
 ```
+
+What would you learn
+---------------------
+
+  - [ ] Implementation of Room Database
+  - [ ] Navigation Componets
+  - [ ] Live Data & ViewModel
