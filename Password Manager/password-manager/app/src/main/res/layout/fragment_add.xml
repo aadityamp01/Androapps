@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddFragment"
+    android:background="?attr/colorPrimaryVariant"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/back_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_left"
+            android:padding="8dp"
+            android:layout_marginEnd="1dp"
+            app:tint="?attr/colorOnPrimary"
+            android:background="@drawable/custom_image_bg"/>
+        <TextView
+            android:id="@+id/top_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_your_key"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnPrimary"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_layout1"
+        style="@style/custom_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:focusedByDefault="true"
+        android:focusable="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/account_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:hint="@string/account_name"
+            android:inputType="text"
+            android:textColorHint="?attr/colorOnSecondary"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_layout2"
+        style="@style/custom_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_layout1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:hint="@string/username_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="?attr/colorOnSecondary"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_layout3"
+        style="@style/custom_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_layout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/additional_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:hint="@string/additional_info"
+            android:inputType="text"
+            android:textColorHint="?attr/colorOnSecondary"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_layout4"
+        style="@style/custom_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_layout3"
+        app:passwordToggleDrawable="@drawable/custom_eye"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_undo"
+        app:startIconCheckable="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="?attr/colorOnSecondary"
+            tools:targetApi="o"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/delete_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_this_key"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toStartOf="@id/edittext_layout4"
+        app:layout_constraintTop_toBottomOf="@id/edittext_layout4"
+        android:padding="5dp"
+        android:background="@drawable/custom_image_bg"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_checkmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        android:contentDescription="@string/done"
+        android:layout_margin="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
