@@ -35,7 +35,8 @@
 4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
 5. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
 
-### Contributing
+### Contributing guide :
+
 #### 1. Register for the hacktoberfest2021
 
 link - https://hacktoberfest.digitalocean.com/
@@ -43,7 +44,7 @@ link - https://hacktoberfest.digitalocean.com/
 #### 2. Go through the [CONTRIBUTING.md](https://github.com/aadityamp01/Androapps/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/aadityamp01/Androapps/blob/master/CODE_OF_CONDUCT.md)
 
 
-### Setting up the project
+### Setting up the project :
 
 To setup the project locally please follow the instructions:
 #### 1. Star and Fork this Repository
@@ -61,7 +62,7 @@ git clone https://github.com/your_username/Androapps.git
 ###### Once the project is cloned/opened create a new branch and checkout in it where you can make the changes in the code.
 ###### You can do this either from terminal or from the github desktop.
 
-###### To do from Terminal:
+###### To do from Terminal :
 ```
 git branch new-branch
 git checkout new-branch
