@@ -13,4 +13,4 @@ Volley is available on GitHub.
 
 # ScreenShots
 
-<img src="https://user-images.githubusercontent.com/50077510/136645339-c64972cb-9dd9-457d-9f43-e93248e34d71.gif" width="200">
+<img src="https://user-images.githubusercontent.com/50077510/136892796-fd8b888c-9d10-49ef-9b5b-85f03eb76754.png" width="200"> <img src="https://user-images.githubusercontent.com/50077510/136892803-2d416431-63fd-4271-bbf8-5b4b0bf8a34a.png" width="200">
