@@ -9,7 +9,7 @@
  - Retrofit
  - Gson Converter
  - Coroutines And Flow
- - OMDB Api
+ - OMDB REST Api
  - ViewBinding
  - Dagger Hilt
  
