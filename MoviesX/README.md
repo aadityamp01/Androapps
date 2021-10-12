@@ -8,7 +8,7 @@
  ## Libraries and APIs Used
  - Retrofit
  - Gson Converter
- - Corouintes And Flow
+ - Coroutines And Flow
  - OMDB Api
  - ViewBinding
  - Dagger Hilt
