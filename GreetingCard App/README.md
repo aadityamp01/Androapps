@@ -5,4 +5,4 @@ This App shows how to use Intent to send data & switch between different activit
 
 ## ScreenShots
 
-<img src="https://user-images.githubusercontent.com/50077510/137127319-604966dd-cf8c-442e-b023-d7665b69b17c.png" width="200">
+<img src="https://user-images.githubusercontent.com/50077510/137638953-792483cf-0ca9-4945-9fbe-790639cd787a.gif" width="200">
