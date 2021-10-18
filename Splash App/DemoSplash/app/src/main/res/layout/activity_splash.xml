@@ -12,6 +12,7 @@
     <TextView
         android:text="@string/name"
         android:textStyle="bold"
+        android:fontFamily="monospace"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textAlignment="center"
