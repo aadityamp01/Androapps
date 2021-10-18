@@ -14,4 +14,9 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
         Objects.requireNonNull(getSupportActionBar()).setTitle(getString(R.string.welcome));
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
