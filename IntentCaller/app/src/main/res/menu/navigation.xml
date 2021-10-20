@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_maps"
+        android:icon="@drawable/ic_maps"
+        android:title="Maps Tracker" />
+
+    <item
+        android:id="@+id/navigation_web"
+        android:icon="@drawable/ic_web"
+        android:title="Web URL" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_home"
+        android:title="Dashbaord" />
+
+    <item
+        android:id="@+id/navigation_phone"
+        android:icon="@drawable/ic_phone"
+        android:title="Phone Cell" />
+
+    <item
+        android:id="@+id/navigation_mail"
+        android:icon="@drawable/ic_mail"
+        android:title="Sent Email" />
+
+</menu>
