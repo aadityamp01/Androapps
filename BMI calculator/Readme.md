@@ -1,8 +1,8 @@
 # BMI Calculator 
 
 ## DEMO
-![](1.PNG)
+![](1.jpeg)
 
 <h1></h1>
 
-![](2.PNG)
+![](2.jpeg)
