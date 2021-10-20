@@ -1,8 +1,6 @@
 # BMI Calculator 
 
 ## DEMO
-![](1.jpeg)
+<img src="1.jpeg" width="425"/>                                                               <img src="2.jpeg" width="425"/> 
 
-<h1></h1>
 
-![](2.jpeg)
