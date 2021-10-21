@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
-    tools:context="Intentcaller.Chandras.TI18D5.fragment.MailFragment">
+    tools:context="Guzzlecode.IntentCaller.fragment.MailFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:text="Sent Email Via"
+                android:text="Sent Email Via App"
                 android:textSize="8pt"/>
 
         </LinearLayout>

@@ -6,7 +6,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Intentcaller.Chandras.TI18D5.activity.DashbaordActivity"
+    tools:context="Guzzlecode.IntentCaller.activity.DashbaordActivity"
     android:background="#F3EBEB">
 
     <FrameLayout

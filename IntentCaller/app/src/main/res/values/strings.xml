@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Chandra TI18D5</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Intent Caller v1.0</string>
+    <string name="info_dashboard">Hi! We made this application to contribute to the <b>@aadityamp01</b> account on GitHub at <u>Hacktoberfest 2021</u>, here are the features I added in this application.\n\n1. Implementation <u>Bottom Navigation View</u>\n\n2. On the first menu, which is how to <u>display maps</u> in our mobile application with the Google Maps API\n\n3. In the second menu, there is a fragment to <u>display a web page by entering a URL address</u>\n\n4. In the third menu is the <u>caller intent</u> with 2 Mode options\n\n5. <u>Sending Email</u> with Android App, and in intent to Email App on Smartphone\n\nAs time goes by, we will continue to develop these features for friends to use, maybe to implement it in a great application.</string>
+
 </resources>

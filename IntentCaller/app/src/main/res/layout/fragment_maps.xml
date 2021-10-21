@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Intentcaller.Chandras.TI18D5.fragment.MapsFragment">
+    tools:context="Guzzlecode.IntentCaller.fragment.MapsFragment">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/google_maps"
-        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>

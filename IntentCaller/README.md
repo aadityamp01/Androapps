@@ -1,12 +1,9 @@
-## Intent Caller 1.0 
-Tugas PAS, STT Pelita Bangsa Cikarang, Chandra, TI18D5, dengan mengimplementasikan Intent Caller fragment Maps, Phone, Webview & Send Email, Berikut fitur yang sudah diterapkan di project ini
+## Intent Caller v1.0 - Hacktoberfest 2021
+Hi! We made this application to contribute to the @aadityamp01 account on GitHub at Hacktoberfest 2021, here are the features I added in this application.
 
-## Dosen Pengampu
-Bpk. Donny
+## Fitur 1 : Map Traker dengan API Maps Google
 
-## Map Traker dengan API Maps Google
-
-Dengan implementasi Maps pada Fragment kita bisa menerapkannya menggunakan meta-data pada bagian AndroidManifest.xml
+With Maps implementation on Fragment we can implement it using meta-data in `AndroidManifest.xml`
 
 ```.xml
 <meta-data
@@ -14,11 +11,11 @@ Dengan implementasi Maps pada Fragment kita bisa menerapkannya menggunakan meta-
    ndroid:value="API_KEY"/>
 ```
 
-<img src="https://github.com/eljitech/intentcaller/blob/master/Pesanan%20Mahasiswa-20210428/Pesanan%20Mahasiswa/Chandra/maps-tracker.gif" height="600"/>
+<img src="https://github.com/guzzlecode/Androapps/blob/asep-septiadi/IntentCaller/capture/maps-tracker.gif" height="600"/>
 
-## Web Loader dengan Webview Android
+## Fitur 2 : Web Loader with Webview Android (Simple Web Browser)
 
-Untuk implementasi Webview kita dapat menambahkan pada Layout .xml 
+For implementation of Webview we can add in Layout .xml
 
 ```.xml
 <WebView
@@ -29,11 +26,11 @@ Untuk implementasi Webview kita dapat menambahkan pada Layout .xml
       android:background="#F3EBEB"/>
 ```
 
-<img src="https://github.com/eljitech/intentcaller/blob/master/Pesanan%20Mahasiswa-20210428/Pesanan%20Mahasiswa/Chandra/webview.gif" height="600"/>
+<img src="https://github.com/guzzlecode/Androapps/blob/asep-septiadi/IntentCaller/capture/web-browser-simple.gif" height="600"/>
 
-## Phone Call
+## Fitur 3 : Phone Call
 
-Untuk implementasi Phone Call kita dapat menggunakan 2 sourcecode berikut
+For Phone Call implementation, we can use the following 2 source codes
 
 ```.java
 final int REQUEST_PHONE_CALL = 1;
@@ -48,7 +45,7 @@ if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
 }
 ```
 
-dan 
+And
 
 ```.java
 Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -56,11 +53,11 @@ intent.setData(Uri.parse("tel:+62" + etPhoneNumber.getText().toString()));
 startActivity(intent);
 ```
 
-<img src="https://github.com/eljitech/intentcaller/blob/master/Pesanan%20Mahasiswa-20210428/Pesanan%20Mahasiswa/Chandra/phone.gif" height="600"/>
+<img src="https://github.com/guzzlecode/Androapps/blob/asep-septiadi/IntentCaller/capture/caller-intent.gif" height="600"/>
 
-## Send Mail with Intent to Mail Client
+##  Fitur 4 : Send Mail with Intent to Mail Client
 
-Untuk implementasi akses Mail Client kita dapat menggunakan sourcecode dibawah ini
+For the implementation of Mail Client access, we can use the source code below:
 
 ```.java
 Intent sentWith = new Intent(Intent.ACTION_SEND);
@@ -73,7 +70,7 @@ sentWith.setType("message/rfc822");
 startActivity(Intent.createChooser(sentWith, "Choose an Email Client"));
 ```
 
-<img src="https://github.com/eljitech/intentcaller/blob/master/Pesanan%20Mahasiswa-20210428/Pesanan%20Mahasiswa/Chandra/mail.gif" height="600"/>
+<img src="https://github.com/guzzlecode/Androapps/blob/asep-septiadi/IntentCaller/capture/email-intent.gif" height="600"/>
 
 ## Testing App
-Untuk mencoba aplikasi bisa di download file .apk nya <a href="https://drive.google.com/file/d/1Yc6sHVBMMkcbE3m8DnNPJOUo7lxZdXX6/view?usp=sharing">download disini</a>
+To try the application, you can download the .apk file <a href="https://drive.google.com/file/d/1v50fJ7D2ho-MzX4CtRACPVKiAEnfDI6p/view?usp=sharing">Download Here</a>

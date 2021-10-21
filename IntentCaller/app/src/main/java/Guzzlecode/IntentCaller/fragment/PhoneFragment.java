@@ -1,4 +1,4 @@
-package Intentcaller.Chandras.TI18D5.fragment;
+package Guzzlecode.IntentCaller.fragment;
 
 import android.Manifest;
 import android.content.Intent;
@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import Intentcaller.Chandras.TI18D5.R;
+import Guzzlecode.IntentCaller.R;
 
 
 public class PhoneFragment extends Fragment {

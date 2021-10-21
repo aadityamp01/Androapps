@@ -1,4 +1,4 @@
-package Intentcaller.Chandras.TI18D5.fragment;
+package Guzzlecode.IntentCaller.fragment;
 
 import android.os.Bundle;
 
@@ -13,7 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 
-import Intentcaller.Chandras.TI18D5.R;
+import Guzzlecode.IntentCaller.R;
 
 
 public class WebFragment extends Fragment {

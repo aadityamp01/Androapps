@@ -1,4 +1,4 @@
-package Intentcaller.Chandras.TI18D5.fragment;
+package Guzzlecode.IntentCaller.fragment;
 
 import android.os.Bundle;
 
@@ -15,7 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import Intentcaller.Chandras.TI18D5.R;
+import Guzzlecode.IntentCaller.R;
 
 
 public class MapsFragment extends Fragment {

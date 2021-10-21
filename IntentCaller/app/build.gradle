@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "Intentcaller.Chandras.TI18D5"
+        applicationId "Guzzlecode.IntentCaller"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1

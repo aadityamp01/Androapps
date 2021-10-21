@@ -1,20 +1,21 @@
-package Intentcaller.Chandras.TI18D5.activity;
+package Guzzlecode.IntentCaller.activity;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.os.Bundle;
-import android.view.MenuItem;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import Intentcaller.Chandras.TI18D5.R;
-import Intentcaller.Chandras.TI18D5.fragment.DashboardFragment;
-import Intentcaller.Chandras.TI18D5.fragment.MailFragment;
-import Intentcaller.Chandras.TI18D5.fragment.MapsFragment;
-import Intentcaller.Chandras.TI18D5.fragment.PhoneFragment;
-import Intentcaller.Chandras.TI18D5.fragment.WebFragment;
+import Guzzlecode.IntentCaller.R;
+import Guzzlecode.IntentCaller.fragment.DashboardFragment;
+import Guzzlecode.IntentCaller.fragment.MailFragment;
+import Guzzlecode.IntentCaller.fragment.MapsFragment;
+import Guzzlecode.IntentCaller.fragment.PhoneFragment;
+import Guzzlecode.IntentCaller.fragment.WebFragment;
 
 public class DashbaordActivity extends AppCompatActivity {
 
@@ -37,7 +38,7 @@ public class DashbaordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        getSupportActionBar().setTitle("Chandras TI18D5");
+        getSupportActionBar().setTitle("Intent Caller v1.0");
 
         BottomNavigationView navigationMenu = (BottomNavigationView)findViewById(R.id.navigation);
         navigationMenu.setOnNavigationItemSelectedListener(itemselectedListenerNavigation);

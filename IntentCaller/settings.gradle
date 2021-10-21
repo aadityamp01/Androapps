@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Intent Caller"
+rootProject.name = "Intent Caller v1.0"

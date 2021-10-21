@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Intentcaller.Chandras.TI18D5.fragment.PhoneFragment">
+    tools:context="Guzzlecode.IntentCaller.fragment.PhoneFragment">
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -35,7 +35,7 @@
                 android:gravity="left"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Masukkan Nomor Telpon/Ponsel"/>
+                android:hint="Enter Phone/Mobile Number"/>
 
         </LinearLayout>
 

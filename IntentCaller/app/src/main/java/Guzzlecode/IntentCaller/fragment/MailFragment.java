@@ -1,4 +1,4 @@
-package Intentcaller.Chandras.TI18D5.fragment;
+package Guzzlecode.IntentCaller.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import Intentcaller.Chandras.TI18D5.R;
-
+import Guzzlecode.IntentCaller.R;
 
 public class MailFragment extends Fragment {
 
