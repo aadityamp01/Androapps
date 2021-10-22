@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2021 Shahriar Nasim Nafi. All rights reserved.
+  -->
+
+<resources>
+    <color name="purple_200">#A4DF5C</color>
+    <color name="purple_500">#94CA52</color>
+    <color name="purple_700">#80AE48</color>
+    <color name="teal_200">#94CA52</color>
+    <color name="teal_700">#80AE48</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
