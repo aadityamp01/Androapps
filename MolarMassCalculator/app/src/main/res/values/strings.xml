@@ -1,0 +1,13 @@
+<!--
+  ~ Copyright © 2021 Shahriar Nasim Nafi. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">Molar Mass Calculator</string>
+    <string name="g_mol">%s g/mol</string>
+    <string name="percentage">%</string>
+    <string name="wrongFormula">Wrong Formula!</string>
+    <string name="rules">This calculator can handle about all types of formula. But you need to keep in mind this\n\nFor 4H2O, you should write (H2O)4\n\nAnother example\n\n4MgCO3.Mg(OH)2.4H2O, you should write (MgCO3)4.Mg(OH)2.(H2O)4</string>
+    <string name="rule_title">Manaul</string>
+    <string name="version">Version: 1.0.0</string>
+</resources>
