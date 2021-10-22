@@ -10,6 +10,8 @@
 ### Languages Used in Projects
 1. Java
 2. Kotlin
+3. Flutter
+4. C++
 
 
 ### Requirements
@@ -23,8 +25,12 @@
 1. https://developer.android.com/docs
 2. https://developer.android.com/courses/pathways/kotlin-for-java [Java to Kotlin Pathway]
 3. https://developer.android.com/kotlin/campaign/learn [Learn Kotlin]
-4. https://github.com/Kotlin/kotlinx.coroutines/blob/master/ui/coroutines-guide-ui.md?s=09 [Kotlin Coroutines]
-
+4. https://flutter.dev/docs
+5. https://www.youtube.com/watch?v=Z6KZ3cTGBWw [Building your first Flutter app]
+6. https://github.com/Kotlin/kotlinx.coroutines/blob/master/ui/coroutines-guide-ui.md?s=09 [Kotlin Coroutines]
+7. https://codelabs.developers.google.com/codelabs/from-java-to-dart#0 ( Learn Dart - Codelab )
+8. https://developer.android.com/ndk/guides [Native Development Kit Guide]
+9. https://developer.android.com/training/articles/perf-jni
 
 ### Android Dev Learnings/ Best Resources
 0. https://github.com/MindorksOpenSource/android-developer-roadmap ( Android ROADMAP - MindorksOpenSource )
@@ -33,7 +39,9 @@
 2. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
 3. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
 4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
-5. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
+5. https://www.youtube.com/watch?v=pTJJsmejUOQ ( Learn Flutter - Full Tutorial for Beginners )
+6. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
+
 
 ### Contributing
 #### 1. Register for the hacktoberfest2021
