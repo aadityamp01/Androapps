@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hacktoberfest Issues</string>
+    <string name="connection_error_message">Check your connection and try again!</string>
+    <string name="generic_error_message">Something went wrong!</string>
+    <string name="try_again">Try again!</string>
+    <string name="content_description_no_connection_icon">No connection icon</string>
+</resources>
