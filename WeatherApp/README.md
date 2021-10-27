@@ -18,4 +18,8 @@
 - Step2: Click the search button.
 
 ### Resources
-
+1. Images from [Pinterest](https://www.pinterest.com/)
+2. Icons from [Flaticon](https://www.flaticon.com/)
+3. API from [Open Weather Map](https://openweathermap.org/api)
+4. [Android Developer](https://developer.android.com/)
+5. [Stack Overflow](https://stackoverflow.com/)
