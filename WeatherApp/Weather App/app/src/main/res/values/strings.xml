@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="city">Enter a city name...</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="background">background</string>
+    <string name="searchbtn">searchBtn</string>
+    <string name="sunseticon">sunsetIcon</string>
+    <string name="sunriseicon">sunriseicon</string>
+    <string name="windspeedicon">windspeedicon</string>
+    <string name="humidicon">humidicon</string>
+    <string name="welcome_to_the_weather_app">Welcome to the weather app!!</string>
+    <string name="reminder">Remember to check the weather before going out!</string>
+</resources>
