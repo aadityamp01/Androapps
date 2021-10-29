@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PEDOBAR"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:gravity="center"/>
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:progress="1"
+            android:max="100"
+            app:indicatorColor="#FF0000"
+            app:indicatorDirectionCircular="counterclockwise"
+            app:indicatorSize="225dp"
+            app:trackColor="#D3D3D3"
+            app:trackThickness="15dp" />
+        <TextView
+            android:id="@+id/stepsView"
+            android:layout_gravity="center"
+            android:text="0 \n Steps"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/inM"
+        android:layout_below="@id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Distance in metres \n4.5 meters"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/calories"
+        android:layout_below="@+id/frame"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calories Burned \n 200 calories"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inM"
+        android:background="#D3D3D3"
+        >
+        <ListView
+            android:layout_margin="2dp"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
