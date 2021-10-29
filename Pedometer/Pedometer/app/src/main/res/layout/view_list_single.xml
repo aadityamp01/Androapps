@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="fill_horizontal"
+    android:layout_marginTop="4dp"
+    android:elevation="6dp"
+    android:background="@drawable/round_corner">
+
+    <TextView
+        android:id="@+id/listDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:text="dd/mm/yyy" />
+
+    <TextView
+        android:id="@+id/listDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="92dp"
+        android:layout_toRightOf="@+id/listDate"
+        android:text="0.0 meters" />
+
+    <TextView
+        android:id="@+id/listCalorie"
+        android:text="Calories"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
