@@ -18,37 +18,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <EditText
-        android:id="@+id/searchLocation"
-        android:layout_width="320sp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edit_text_design"
-        android:fontFamily="cursive"
-        android:hint="@string/city"
-        android:padding="10sp"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <ImageButton
-        android:id="@+id/searchButton"
-        android:layout_width="59dp"
-        android:layout_height="52dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edit_text_design"
-        android:contentDescription="@string/searchbtn"
-        android:src="@drawable/search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6" />
+        <EditText
+            android:id="@+id/searchLocation"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="city"
+            android:background="@drawable/edit_text_design"
+            android:fontFamily="cursive"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:padding="10sp"
+            android:layout_weight="5"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="59dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="2sp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_design"
+            android:contentDescription="@string/searchbtn"
+            android:src="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/listButton"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="1sp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_design"
+            android:contentDescription="@string/searchbtn"
+            android:src="@drawable/list" />
+
+    </LinearLayout>
+
+
+
+
 
     <TextView
         android:id="@+id/location"
@@ -173,6 +193,7 @@
         app:layout_constraintGuide_percent="0.42" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
