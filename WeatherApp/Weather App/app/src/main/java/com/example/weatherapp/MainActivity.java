@@ -1,10 +1,15 @@
 package com.example.weatherapp;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -16,28 +21,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Cache;
-import com.android.volley.Network;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.BasicNetwork;
-import com.android.volley.toolbox.DiskBasedCache;
-import com.android.volley.toolbox.HurlStack;
-import com.android.volley.toolbox.JsonObjectRequest;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.text.SimpleDateFormat;
 import java.time.LocalTime;
-import java.time.ZoneOffset;
-import java.util.Date;
-import java.util.TimeZone;
+import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-    String APIKEY_ = "c22541c8c24aef3809ab3e168f7b1d7e";
-
+public class MainActivity extends AppCompatActivity implements IBindData {
+    int LAUNCH_SECOND_ACTIVITY = 1;
     ImageButton search;
     EditText city;
     TextView location;
@@ -51,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
     TextView wind;
     TextView sunRise;
     TextView sunSet;
-
+    ImageButton list;
+    ArrayList<String> cityList = new ArrayList<>();
+    IBindData iBindData;
     // uses this value to set back ground based on the current time
     LocalTime myTime;
 
@@ -60,10 +50,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        iBindData = this;
         // sets views
         city = (EditText) findViewById(R.id.searchLocation);
         search = (ImageButton) findViewById(R.id.searchButton);
+        list = (ImageButton) findViewById(R.id.listButton);
         location = (TextView) findViewById(R.id.location);
         temperature = (TextView) findViewById(R.id.temperature);
         displayWeather = (TextView) findViewById(R.id.weather);
@@ -77,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         sunSet = (TextView) findViewById(R.id.dusk);
 
         // gets current time
-        myTime =  LocalTime.now();
+        myTime = LocalTime.now();
         setBackground(myTime.getHour(), background);
 
         search.setOnClickListener(view -> {
@@ -85,107 +76,63 @@ public class MainActivity extends AppCompatActivity {
             hideSoftKeyboard(MainActivity.this);
 
             // if user did not provide a city name, show toast to announce
-            if(city.getText().toString().equals("")){
+            if (city.getText().toString().equals("")) {
                 Toast.makeText(getApplicationContext(), "Please provide a city name!!!", Toast.LENGTH_SHORT).show();
             } else {
                 // calls function requesting API
-                getData(city.getText().toString());
+                AppController controller = new AppController(iBindData);
+                controller.getData(this, city.getText().toString());
                 city.setText(""); // resets value of edit text
             }
+
         });
+
+        // starts second act ans passes cityList to it when list btn is clicked
+        list.setOnClickListener(view -> {
+            Intent myIntent = new Intent(this, HistoryListActivity.class);
+            myIntent.putStringArrayListExtra("cities", this.cityList);
+            if(myIntent.resolveActivity(getPackageManager()) != null){
+                actLauncher.launch(myIntent);
+            }
+        });
+
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    private void getData(String city) {
-        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKEY_;
-        // creates request queue
-        RequestQueue mRequestQueue;
-        // instantiates the cache
-        Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024);
-        // setups the network to use the HTTPURLConnection client
-        Network network = new BasicNetwork(new HurlStack());
-        // instantiates the request queue
-        mRequestQueue = new RequestQueue(cache, network);
-        // starts the queue
-        mRequestQueue.start();
-
-        @SuppressLint("SetTextI18n") JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, apiUrl, null, response -> {
-                    try {
-                        // gets JSON objects
-                        JSONObject mainWeather = response.getJSONObject("main");
-                        JSONObject weather = response.getJSONArray("weather").getJSONObject(0);
-                        JSONObject windInfo = response.getJSONObject("wind");
-                        JSONObject sunInfo = response.getJSONObject("sys");
-
-                        // converts unix time to date
-                        Date dateInfo = new Date(response.getLong("dt")*1000);
-                        Date sunRiseD = new Date(sunInfo.getLong("sunrise") * 1000);
-                        Date sunSetD = new Date(sunInfo.getLong("sunset") * 1000);
-                        int timezone = response.getInt("timezone");
-
-                        // formats output
-                        @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd MMM yyyy");
-                        dateFormat.setTimeZone(TimeZone.getTimeZone(ZoneOffset.ofTotalSeconds(timezone)));
-                        @SuppressLint("SimpleDateFormat") SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm a");
-                        timeFormat.setTimeZone(TimeZone.getTimeZone(ZoneOffset.ofTotalSeconds(timezone)));
-
-                        String dateStr = dateFormat.format(dateInfo);
-                        String timeStr = timeFormat.format(dateInfo);
-                        String sunRiseStr = timeFormat.format(sunRiseD);
-                        String sunSetStr = timeFormat.format(sunSetD);
-
-                        // converts °K to °C
-                        int tempC = (int) (Math.round(mainWeather.getDouble("temp") - 273.15));
-                        int feelTemp = (int)(Math.round(mainWeather.getDouble("feels_like") - 273.15));
-
-                        // gets weather information
-                        int humidity = mainWeather.getInt("humidity");
-                        double windSpeed = windInfo.getDouble("speed");
-
-                        // sets content for xml views
-                        setBackground(Integer.parseInt(timeStr.substring(0,2)), background);
-                        currentDate.setText(dateStr);
-                        currentTime.setText(timeStr);
-                        temperature.setText(tempC + "°");
-                        location.setText(city.toUpperCase());
-                        displayWeather.setText(weather.getString("main"));
-                        feels.setText("Feels like: " + feelTemp + "°C");
-                        humid.setText(humidity + "%");
-                        wind.setText(windSpeed + "m/s");
-                        sunRise.setText(sunRiseStr);
-                        sunSet.setText(sunSetStr);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                },
-                        error -> {
-                            error.printStackTrace();
-                            // displays error
-                            Toast.makeText(getApplicationContext(), "Invalid city!!!", Toast.LENGTH_SHORT).show();
-                            VolleyLog.e("Error: ", error.toString());
-                            VolleyLog.e("Error: ", error.getLocalizedMessage());
-                        });
-
-        // Add the request to the RequestQueue
-        mRequestQueue.add(jsObjRequest);
+    // sets content for xml views
+    @SuppressLint("SetTextI18n")
+    public void setData(WeatherData cityData) {
+            setBackground(cityData.hour, background);
+            currentDate.setText(cityData.dateStr);
+            currentTime.setText(cityData.timeStr);
+            temperature.setText(cityData.tempC + "°");
+            location.setText(cityData.city.toUpperCase());
+            displayWeather.setText(cityData.weather);
+            feels.setText("Feels like: " + cityData.feelTemp + "°C");
+            humid.setText(cityData.humidity + "%");
+            wind.setText(cityData.windSpeed + "m/s");
+            sunRise.setText(cityData.sunRiseStr);
+            sunSet.setText(cityData.sunSetStr);
+            // add city to CityList
+            if (!this.cityList.contains(cityData.city.toLowerCase())) {
+                this.cityList.add(cityData.city.toLowerCase());
+            }
     }
 
     // gets time and changes img src based on time
     @SuppressLint("UseCompatLoadingForDrawables")
-    void setBackground(int hour, ImageView imgV){
-        Drawable src = getDrawable(R.drawable.night_);
+    void setBackground(int hour, ImageView imgV) {
         displayWeather.setTextColor(Color.parseColor("#ffffff"));
-
-        if(hour >= 4 && hour < 7 ) {
+        Drawable src;
+        if (hour >= 4 && hour < 7) {
             src = getDrawable(R.drawable.dawn_);
             displayWeather.setTextColor(Color.parseColor("#000000"));
-        } else if(hour >=7 && hour < 16){
+        } else if (hour >= 7 && hour < 16) {
             src = getDrawable(R.drawable.day_);
-        } else if(hour >= 16 && hour < 19 ){
+        } else if (hour >= 16 && hour < 19) {
             src = getDrawable(R.drawable.dusk_);
             displayWeather.setTextColor(Color.parseColor("#000000"));
+        }else {
+            src = getDrawable(R.drawable.night_);
         }
         imgV.setBackground(src);
     }
@@ -195,13 +142,49 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager inputMethodManager =
                 (InputMethodManager) activity.getSystemService(
                         Activity.INPUT_METHOD_SERVICE);
-        if(inputMethodManager.isAcceptingText()){
+        if (inputMethodManager.isAcceptingText()) {
             inputMethodManager.hideSoftInputFromWindow(
                     activity.getCurrentFocus().getWindowToken(),
                     0
             );
         }
     }
+
+    @Override
+    public void bindData(WeatherData weatherData) {
+        setData(weatherData);
+    }
+
+    private ActivityResultLauncher<Intent> actLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @SuppressLint("SetTextI18n")
+                @RequiresApi(api = Build.VERSION_CODES.O)
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if(result.getResultCode() == Activity.RESULT_OK){
+                        // item of listview is clicked
+                        if(result.getData() != null){
+                            Intent myIntent = result.getData();
+                            AppController controller = new AppController(iBindData);
+                            controller.getData(getApplicationContext(), myIntent.getStringExtra("city"));
+                        } else {
+                            // add btn is clicked
+                            myTime = LocalTime.now();
+                            setBackground(myTime.getHour(), background);
+                            feels.setText("Enter your city to check the weather forecast!");
+                            currentDate.setText("Welcome to the weather app!!");
+                            currentTime.setText("");
+                            temperature.setText("");
+                            location.setText("");
+                            displayWeather.setText("");
+                            humid.setText("");
+                            wind.setText("");
+                            sunRise.setText("");
+                            sunSet.setText("");
+                        }
+                    }
+                }
+            });
 }
 
 
