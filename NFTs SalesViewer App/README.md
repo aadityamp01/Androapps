@@ -2,6 +2,15 @@
 Important demo application to prepopulate room database using external NFTs sales db file by implementing clean architechture. 
 
 ## Overview
+<div align="center">
+  <p float="left">
+    <img src="nf1.jpg" width="25%" >
+    <img src="nf2.jpg" width=25%>
+    <img src="nf3.jpg" width=25%>
+ </p>
+</div>
+
+### Instructions
 1. Prepopulate room database - create entity, dao, database, repository
 2. Create recyclerview adapter/ row_item
 3. Create Main View model
@@ -22,6 +31,6 @@ Note: If you get error about db, make all the coloumns in db as NonNull
 1. Android Basics
 2. Dagger Hilt
 3. ViewModel, livedata, flow
-4. Romm Database (Jetpack Architecture Component) / SQLite DB
+4. Room Database (Jetpack Architecture Component) / SQLite DB
 5. Recyclerview, SearchView
-6. Implementation of External DB (NFTs sales data)
+6. Implementation of External DB into android application(NFTs sales data)
