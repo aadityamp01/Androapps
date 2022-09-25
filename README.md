@@ -1,9 +1,11 @@
-<!--- [![Hacktoberfest 2021](./assets/logo.png)](https://vinitshahdeo.dev/hacktoberfest-2021) --->
+<a href="https://github.com/aadityamp01/Androapps">
+  <div align="center"> <img align="center" alt="hacktoberfest22" src="./assets/hacktoberfest22.png" height='400' width='900'></div>
+</a>
 
 # Androapps
 
 ### Important Android projects to learn fundamentals of android development. 
-#### This is a Beginner Friendly Repository made for Open Source Enthusiasts who can contribute to the App during HacktoberFest 2021. 
+#### This is a Beginner Friendly Repository made for Open Source Enthusiasts who can contribute to the App during HacktoberFest 2022. 
 #### To contribute in this project you need to build your own android apps or you can update the existing applications. 
 
 
@@ -31,6 +33,9 @@
 7. https://codelabs.developers.google.com/codelabs/from-java-to-dart#0 ( Learn Dart - Codelab )
 8. https://developer.android.com/ndk/guides [Native Development Kit Guide]
 9. https://developer.android.com/training/articles/perf-jni
+10. https://developer.android.com/jetpack/compose ( Official reference to jetpack compose)
+11. https://developer.android.com/jetpack/compose/tutorial (Learn jetpack compose)
+12. https://developer.android.com/courses/android-basics-compose/course (Jetpack compose codelabs)
 
 ### Android Dev Learnings/ Best Resources
 0. https://github.com/MindorksOpenSource/android-developer-roadmap ( Android ROADMAP - MindorksOpenSource )
@@ -41,10 +46,16 @@
 4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
 5. https://www.youtube.com/watch?v=pTJJsmejUOQ ( Learn Flutter - Full Tutorial for Beginners )
 6. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
+7. https://aadityapaithane.medium.com/how-to-create-a-new-android-project-559553006356 (Learn How to create android project)
+
+### Flutter Dev Learnings/ Best Resources
+1. https://flutter.dev/ (Flutter Official)
+2. https://docs.flutter.dev/get-started/flutter-for/android-devs (Flutter for Android Developers)
+3. https://www.freecodecamp.org/news/learn-flutter-full-course/ (Learn flutter)
 
 
 ### Contributing
-#### 1. Register for the hacktoberfest2021
+#### 1. Register for the hacktoberfest2022
 
 link - https://hacktoberfest.digitalocean.com/
 
