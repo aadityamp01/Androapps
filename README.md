@@ -47,6 +47,7 @@
 5. https://www.youtube.com/watch?v=pTJJsmejUOQ ( Learn Flutter - Full Tutorial for Beginners )
 6. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
 7. https://aadityapaithane.medium.com/how-to-create-a-new-android-project-559553006356 (Learn How to create android project)
+8. https://www.commclassroom.org/android-roadmap (Android ROADMAP with free resources - Classroom community)
 
 ### Flutter Dev Learnings/ Best Resources
 1. https://flutter.dev/ (Flutter Official)
@@ -57,7 +58,7 @@
 ### Contributing
 #### 1. Register for the hacktoberfest2022
 
-link - https://hacktoberfest.digitalocean.com/
+link - https://hacktoberfest.com/
 
 #### 2. Go through the [CONTRIBUTING.md](https://github.com/aadityamp01/Androapps/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/aadityamp01/Androapps/blob/master/CODE_OF_CONDUCT.md)
 
