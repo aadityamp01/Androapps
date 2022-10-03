@@ -34,7 +34,6 @@
    
 10. [Learn How to create android project](https://aadityapaithane.medium.com/how-to-create-a-new-android-project-559553006356) 
 
-<br>
 
 ## Kotlin Resources / Roadmaps
 
@@ -44,7 +43,7 @@
    
 3. [Java to Kotlin Pathway](https://developer.android.com/courses/pathways/kotlin-for-java)
 
-<br>
+
 
 ## Flutter Resources / Roadmaps
 
@@ -65,7 +64,7 @@
     
 11. [Flutter Basics - The Net Ninja](https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)
 
-<br><br>
+
 ## Contact and Support
 
 > **_If you face any issue related to any project or want to suggest any application, Please feel free to contact me:   @ [ampicopn@gmail.com]_**
@@ -73,4 +72,4 @@
 ### Liked this repo, give it a star ⭐ and fork 🍽️ this repository to help others!!
 
 
-#### Made with ❤️ By Aaditya Paithane
+Made with ❤️ By Aaditya Paithane
