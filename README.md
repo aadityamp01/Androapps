@@ -9,7 +9,7 @@
 #### To contribute in this project you need to build your own android apps or you can update the existing applications. 
 
 
-### Languages Used in Projects
+### Languages used in Projects
 1. Java
 2. Kotlin
 3. Flutter
@@ -17,47 +17,46 @@
 
 
 ### Requirements
-1. Android Version 5.0 and above
+1. Android Version 5.0 or above
 2. CompileSdkVersion 29/30
 3. MinSdkVersion 21
 4. Androidx
 5. Gradle Build (According to the project)
 
 ### Official References to learn Android development
-1. https://developer.android.com/docs
-2. https://developer.android.com/courses/pathways/kotlin-for-java [Java to Kotlin Pathway]
-3. https://developer.android.com/kotlin/campaign/learn [Learn Kotlin]
-4. https://flutter.dev/docs
-5. https://www.youtube.com/watch?v=Z6KZ3cTGBWw [Building your first Flutter app]
-6. https://github.com/Kotlin/kotlinx.coroutines/blob/master/ui/coroutines-guide-ui.md?s=09 [Kotlin Coroutines]
-7. https://codelabs.developers.google.com/codelabs/from-java-to-dart#0 ( Learn Dart - Codelab )
-8. https://developer.android.com/ndk/guides [Native Development Kit Guide]
-9. https://developer.android.com/training/articles/perf-jni
-10. https://developer.android.com/jetpack/compose ( Official reference to jetpack compose)
-11. https://developer.android.com/jetpack/compose/tutorial (Learn jetpack compose)
-12. https://developer.android.com/courses/android-basics-compose/course (Jetpack compose codelabs)
+1. [Documentation](https://developer.android.com/docs)
+2. [Java to Kotlin Pathway](https://developer.android.com/courses/pathways/kotlin-for-java)
+3. [Learn Kotlin](https://developer.android.com/kotlin/campaign/learn)
+4. [Flutter Docs](https://flutter.dev/docs)
+5. [Building your first Flutter app](https://www.youtube.com/watch?v=Z6KZ3cTGBWw)
+6. [Kotlin Coroutines](https://github.com/Kotlin/kotlinx.coroutines/blob/master/ui/coroutines-guide-ui.md?s=09)
+7. [Learn Dart - Codelab](https://codelabs.developers.google.com/codelabs/from-java-to-dart#0)
+8. [Native Development Kit Guide](https://developer.android.com/ndk/guides)
+9. [JNI Tips](https://developer.android.com/training/articles/perf-jni)
+10. [Official reference to Jetpack Compose](https://developer.android.com/jetpack/compose)
+11. [Learn Jetpack Compose](https://developer.android.com/jetpack/compose/tutorial)
+12. [Jetpack Compose Codelabs](https://developer.android.com/courses/android-basics-compose/course)
 
 ### Android Dev Learnings/ Best Resources
-0. https://github.com/MindorksOpenSource/android-developer-roadmap ( Android ROADMAP - MindorksOpenSource )
-0. https://youtu.be/VaMWsm6CFss ( Android ROADMAP - Love Bubber Bhaiya)
-1. https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb (Basics of Android - Anuj Bhaiya)
-2. https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa
-3. https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab
-4. https://github.com/MindorksOpenSource/android-mvvm-architecture ( Android MVVM Architechture -  MindorksOpenSource  )
-5. https://www.youtube.com/watch?v=pTJJsmejUOQ ( Learn Flutter - Full Tutorial for Beginners )
-6. https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed (General questions about android development)
-7. https://aadityapaithane.medium.com/how-to-create-a-new-android-project-559553006356 (Learn How to create android project)
+1. [Android ROADMAP - MindorksOpenSource](https://github.com/MindorksOpenSource/android-developer-roadmap)
+2. [Android ROADMAP - Love Babbar](https://youtu.be/VaMWsm6CFss)
+3. [Basics of Android - Anuj Bhaiya](https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb)
+4. [Android Tutorials - slidenerd](https://www.youtube.com/playlist?list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa)
+5. [The Android Lifecycle cheat sheet](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab)
+6. [Android MVVM Architechture -  MindorksOpenSource](https://github.com/MindorksOpenSource/android-mvvm-architecture)
+7. [Learn Flutter - Full Tutorial for Beginners](https://www.youtube.com/watch?v=pTJJsmejUOQ)
+8. [General questions about android development](https://aadityapaithane.medium.com/why-should-i-choose-android-development-as-a-beginner-267988e565ed)
+9. [Learn how to create android project](https://aadityapaithane.medium.com/how-to-create-a-new-android-project-559553006356)
 
 ### Flutter Dev Learnings/ Best Resources
-1. https://flutter.dev/ (Flutter Official)
-2. https://docs.flutter.dev/get-started/flutter-for/android-devs (Flutter for Android Developers)
-3. https://www.freecodecamp.org/news/learn-flutter-full-course/ (Learn flutter)
+1. [Flutter Official](https://flutter.dev/)
+2. [Flutter for Android Developers](https://docs.flutter.dev/get-started/flutter-for/android-devs)
+3. [Learn flutter - freeCodeCamp](https://www.freecodecamp.org/news/learn-flutter-full-course/)
 
 
 ### Contributing
-#### 1. Register for the hacktoberfest2022
+#### 1. [Register](https://hacktoberfest.digitalocean.com/) for the hacktoberfest2022
 
-link - https://hacktoberfest.digitalocean.com/
 
 #### 2. Go through the [CONTRIBUTING.md](https://github.com/aadityamp01/Androapps/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/aadityamp01/Androapps/blob/master/CODE_OF_CONDUCT.md)
 
@@ -119,7 +118,7 @@ git remote add upstream https://github.com/aadityamp01/Androapps.git
 
 > **_If you face any issue related to any project or want to suggest any application, Please feel free to contact me:   @ [ampicopn@gmail.com]_**
 
-#### Liked this repo, give it a star ⭐ and fork 🍽️ this repository to help others!!
+#### Liked this repo? Give it a star ⭐ and fork 🍽️ this repository to help others!!
 
 
 ##### Made with ❤️ By Aaditya Paithane
