@@ -12,10 +12,17 @@ Overview
 
 <div align="center">
   <p float="left">
-    <img src="image2text_ss_home.png" width="22%" >
-    <img src="mage2text_ss_snap.png" width=22%>
-    <img src="mage2text_ss_camera.png" width=22%>
-    <img src="mage2text_ss_result.png" width=22%>
+    <img src="home.png" width="22%" >
+    <img src="2nd.png" width=22%>
+    <img src="3rd.png" width=22%>
+    <img src="4th.png" width=22%>
+ </p>
+</div>
+<div align="center">
+  <p float="left">
+    <img src="5th.png" width="22%" >
+    <img src="6th.png" width=22%>
+    
  </p>
 </div>
 
