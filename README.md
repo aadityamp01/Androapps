@@ -84,18 +84,31 @@ Navigate to your forked repository, and press the “New pull request” button 
 
 ### 10. You're done, wait for the review from maintainers.
 
+<br><br>
 
-## Project Maintainer :
+## Project Maintainer 
 
+<div align="center">
 <a href="https://github.com/aadityamp01"><img src="https://avatars.githubusercontent.com/u/51539518?v=4" width="100px" height="100px"></a>
 
+</div>
 
+<br>
 
 ## Contact and Support
 
 > **_If you face any issue related to any project or want to suggest any application, Please feel free to contact me:   @ [ampicopn@gmail.com]_**
 
-### Liked this repo, give it a star ⭐ and fork 🍽️ this repository to help others!!
+<br><br>
 
+# Contributors
 
-Made with ❤️ By Aaditya Paithane
+<a href="https://github.com/aadityamp01/Androapps/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aadityamp01/Androapps" />
+</a>
+
+<br><br>
+
+<div align="center">
+Show some ❤️ by Star the Repo
+</div>
