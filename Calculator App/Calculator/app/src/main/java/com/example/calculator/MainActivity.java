@@ -3,8 +3,13 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         data=findViewById(R.id.data);
         output=findViewById(R.id.output);
         oset.add('+'); oset.add('-'); oset.add('*'); oset.add('/'); oset.add('%');
+        data.setMovementMethod(new ScrollingMovementMethod());
     }
-
     public void numberEvent(View view) {
         if(data.getText().toString().equals("0"))
             data.setText("");
@@ -166,14 +172,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equalEvent(View view) {
-        String newNumber=data.getText().toString();
-        double result=0.0;
-        result = Double.parseDouble(String.valueOf(evaluate(newNumber)));
-        output.setText(result+"");
+        try {
+            String newNumber=data.getText().toString();
+            double result=0.0;
+            result = Double.parseDouble(String.valueOf(evaluate(newNumber)));
+            if((int)result==result){
+                output.setText((int)result+"");
+            }else{
+                output.setText(result+"");
+            }
+        }catch (Exception e){
+            Toast.makeText(this, "Invalid Operation!!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void clearEvent(View view) {
         data.setText("0");
+        output.setText("0");
         newOp= true;
     }
 
@@ -192,5 +207,15 @@ public class MainActivity extends AppCompatActivity {
         curr = curr.substring(0,i) + percent.toString();
         data.setText(curr);
         newOp=true;
+    }
+
+    public void backspaceEvent(View view) {
+        String number= data.getText().toString();
+        if(number.length()>0){
+            number=number.substring(0,number.length()-1);
+        }
+        data.setText(number);
+        if(number.equals(""))
+            data.setText("0");
     }
 }
