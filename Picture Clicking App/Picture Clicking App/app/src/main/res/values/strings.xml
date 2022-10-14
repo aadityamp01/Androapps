@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PicClick</string>
+    <string name="pic">sample Image</string>
+    <string name="click_photo">Click Photo</string>
+    <string name="download_image">Download Image</string>
+</resources>
