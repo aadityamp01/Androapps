@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="calculate_your">CALCULATE YOUR</string>
+    <string name="age">AGE</string>
+    <string name="Details">D͢e͢t͢a͢i͢l͢s͢</string>
+    <string name="select_date">SELECT DATE</string>
+    <string name="_15_06_2022">15/06/2022</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="in_minutes_till_date">In minutes till Date</string>
+    <string name="in_hours_till_date">in hours till Date</string>
+    <string name="in_seconds_till_date">in seconds till Date</string>
+    <string name="_0">0</string>
+    <string name="in_days_till_date">in days till Date</string>
+    <string name="symbol">📟</string>
+</resources>
