@@ -5,8 +5,8 @@
 
 <div align="center">
   <p float="left">
-    <img src="page1.png" width="22%" >
-    <img src="page2.png" width=22%>
+    <img src="page1.jpg" width="22%" >
+    <img src="page2.jpg" width=22%>
  </p>
 </div>
 
