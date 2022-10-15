@@ -30,4 +30,5 @@ What would you learn
   - [ ] How can you implement design into layouts
   - [ ] Excellent UI Designing
   - [ ] Use of themes and custom fonts
+  - [ ] Use of fragments in android
   
