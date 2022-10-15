@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tictactoe.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shapeSelectorFragment"
+            app:destination="@id/shapeSelectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/computerFragment"
+        android:name="com.example.tictactoe.fragments.ComputerFragment"
+        android:label="ComputerFragment"
+        tools:layout="@layout/fragment_computer"
+        >
+        <argument
+            android:name="shape"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_computerFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.tictactoe.fragments.PlayerFragment"
+        android:label="PlayerFragment"
+        tools:layout="@layout/fragment_player"/>
+    <fragment
+        android:id="@+id/shapeSelectorFragment"
+        android:name="com.example.tictactoe.fragments.ShapeSelectorFragment"
+        android:label="ShapeSelectorFragment"
+        tools:layout="@layout/fragment_shape_selector">
+        <action
+            android:id="@+id/action_shapeSelectorFragment_to_computerFragment"
+            app:destination="@id/computerFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.tictactoe.fragments.StatsFragment"
+        android:label="StatsFragment"
+        tools:layout="@layout/fragment_stats"/>
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragments.ShapeSelectorFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="Select your shape"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"/>
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/btn_X"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:text="X"
+       android:textSize="32sp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/btn_O"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_O"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="O"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_X"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
