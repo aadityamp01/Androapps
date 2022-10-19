@@ -1,18 +1,35 @@
 
 # Tip Calculator
 
-A simple tip calculator app, used to calculate tip based on the likeliness of the srvice you received.
+A sample Tip Calculator to calculate the tip based on the service. Built using Kotlin on the Android Platform.
 
-And this app, works both ways like for both light and dark modes.
 
-## Screenshots of the app
+## OverView
 
-<br>
-
-### **Dark Mode**
+#### Dark Mode
 ![alt_text](1.jpg)
 
-### **Light Mode**
+#### Light Mode
 ![alt_text](2.jpg)
 
 ![alt_text](3.jpg)
+
+
+### Getting Started 
+
+```
+git clone https://github.com/aadityamp01/Androapps.git
+cd "TipTime"
+```
+
+### Requirements
+  - `Android Studio`
+  - `Android SDK 21 or later`
+
+
+What would you learn
+---------------------
+
+  - Implementing Icons based on your choice
+  - Integrating BackEnd Calculation with FrontEnd
+  - User Input in an App
