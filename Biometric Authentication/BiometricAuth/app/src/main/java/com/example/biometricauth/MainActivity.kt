@@ -18,6 +18,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.ShareCompat.IntentReader.from
 
 class MainActivity : AppCompatActivity() {
+    //Every function can be easily identified from the naming scheme given to it
+    // in the android Manifest there exists a
+    // permission that gives the app permission to make use of the biometric authentication
     private var CancellationSignal: CancellationSignal? = null
     private val AuthenticationCallback: BiometricPrompt.AuthenticationCallback
         get() =
@@ -39,10 +42,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val auth = findViewById<Button>(R.id.btn_auth)
        checkBiometricSupport()
+        // the pop up view for the fingerPrint
     auth.setOnClickListener {
         val biometricPrompt = BiometricPrompt.Builder(this)
             .setTitle("Biometric Login for the app")
-            .setSubtitle("Very User using Biometric Credentials")
+            .setSubtitle("Verify User using Biometric Credentials")
             .setNegativeButton("Cancel", this.mainExecutor, DialogInterface.OnClickListener
             { dialogInterface, unit ->
                 toastMessage("Authentication Cancelled")
@@ -53,10 +57,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkBiometricSupport() : Boolean {
         val keyguardManager = getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
+        //if the fingerprint is not enabled inside the Settings of the device
         if (!keyguardManager.isKeyguardSecure){
             toastMessage("Fingerprint Auth not Enabled")
             return false
         }
+        // if the permission for the app to use the biometric fingerprint is not enabled
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.USE_BIOMETRIC)
             != PackageManager.PERMISSION_GRANTED){
             toastMessage("Fingerprint Auth not Enabled")
@@ -74,7 +80,7 @@ class MainActivity : AppCompatActivity() {
     private fun GetCancellationSignal(): CancellationSignal{
         CancellationSignal = CancellationSignal()
         CancellationSignal?.setOnCancelListener {
-            toastMessage("Auh Canceled")
+            toastMessage("Auth Canceled")
         }
         return CancellationSignal as CancellationSignal
     }
