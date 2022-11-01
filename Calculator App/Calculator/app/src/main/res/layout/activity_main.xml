@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1D1D1D"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,30 +14,22 @@
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
 
         <TextView
             android:id="@+id/data"
             android:layout_width="match_parent"
-            android:layout_height="124dp"
-            android:layout_weight="1"
-            android:background="#1D1D1D"
-            android:gravity="end|bottom"
-            android:text="@string/zero"
-            android:textColor="@color/colorWhite"
-            android:textSize="40sp" />
-
-        <TextView
-            android:id="@+id/output"
-            android:layout_width="match_parent"
-            android:layout_height="292dp"
-            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:minHeight="128dp"
+            android:layout_weight="2"
+            android:scrollbars = "vertical"
             android:background="#1D1D1D"
             android:gravity="end|center"
             android:text="@string/zero"
+            android:paddingHorizontal="15dp"
             android:textColor="@color/colorWhite"
             android:textSize="40sp" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -48,6 +41,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="1"
+            android:background="#1D1D1D"
+            android:gravity="end"
+            android:paddingHorizontal="15dp"
+            android:text="@string/zero"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:background="@drawable/ripple_effect_backspace"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:src="@drawable/ic_backspace"
+                android:onClick="backspaceEvent"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +85,7 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:background="@drawable/ripple_effect_numbers"
+                android:background="@drawable/ripple_effect_operations"
                 android:text="@string/add_subtract"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"
@@ -69,7 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:background="@drawable/ripple_effect_numbers"
+                android:background="@drawable/ripple_effect_operations"
                 android:text="@string/parenthesis"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"
@@ -80,7 +107,7 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:background="@drawable/ripple_effect_numbers"
+                android:background="@drawable/ripple_effect_operations"
                 android:text="@string/modulus"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"

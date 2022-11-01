@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="spanish_pink">#F3B9BB</color>
+    <color name="languid_blush">#FDEFED</color>
+    <color name="Opal">#9DCBC0</color>
+    <color name="pastel_pink">#F7A8A6</color>
+    <color name="glaucous">#658BB1</color>
+    <color name="linen">#FBF3EA</color>
+    <color name="deep_champagne">#FAD18E</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#355070</color>
+    <color name="pvar">@color/languid_blush</color>
+    <color name="sec">#E56B6F</color>
+    <color name="secvar">#EAAC8B</color>
+</resources>
