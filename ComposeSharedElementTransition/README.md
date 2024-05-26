@@ -4,8 +4,8 @@ Created app in Compose to demonstrate shared element transition in a compose lis
 ## Overview
 <div align="center">
   <p float="left">
-    <img src="ComposeSharedElementTransition/images/ss_home.png" width="25%" >
-    <img src="ComposeSharedElementTransition/images/ss_details.png" width=25%>
+    <img src="images/ss_home.png" width="25%" >
+    <img src="images/ss_details.png" width=25%>
  </p>
 </div>
 
